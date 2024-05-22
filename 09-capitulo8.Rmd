@@ -905,7 +905,7 @@ necesitamos desarrollar aquí.
 
 Esta distribución es el primer modelo que veremos con forma
 asimétrica[^61]. Una de sus aplicaciones es la estimación de la
-varianza, nosotros la utilizaremos más adelante, cuando tratemos sobre
+varianza, la vamos a usar más adelante, cuando tratemos sobre
 estadística no paramétrica, en especial para probar si una variable
 puede modelarse con cierta distribución (pruebas de bondad de ajuste) y
 también para analizar la independencia entre variables nominales. Del mismo modo en que tratamos a la distribución normal, no haremos uso
