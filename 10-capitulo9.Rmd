@@ -113,18 +113,20 @@ $$\widehat{p} = \frac{x}{n}$$
 
 Mientras que en la población, si $X$ es la cantidad de éxitos:
 
-$$P = \frac{X}{N}$$
+$$P = \frac{X}{N}$$  
+
+
 
 Una excepción a esto es la varianza, porque el modo de
 calcularla es levemente distinto si se trabaja con datos muestrales o
 poblacionales. Cuando es calculada sobre los elementos de la muestra, recordemos que la varianza muestral es:
 
-$$s^{2} = \frac{\sum_{i = 1}^{n}{{(x}_{i} - \overline{x})}^{2}}{n - 1}$$
+$$s^{2} = \frac{\sum_{i = 1}^{n}{(x_{i} - \overline{x})}^{2}}{n - 1}$$  
 
 Pero cuando la varianza se calcula sobre los elementos de la población,
 su cálculo se realiza con la expresión:
 
-$$\sigma^{2} = \frac{\sum_{i = 1}^{N}{{(x}_{i} - \mu)}^{2}}{N}$$
+$$\sigma^{2} = \frac{\sum_{i = 1}^{N}{(x_{i} - \mu)}^{2}}{N}$$
 
 En esta última expresión cambiaron los nombres de los elementos con los
 que se opera ($\mu$ en lugar de $\overline{x}$, $N$ en lugar de $n$), y
