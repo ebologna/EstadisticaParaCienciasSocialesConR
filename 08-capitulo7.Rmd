@@ -598,7 +598,7 @@ Lo cual, dicho en lenguaje cotidiano nos indica que, para la ocurrencia del even
 
 $$P(R_{1} \cap R_{2})=P(R_{1})*P(R_{2})$$
 
-```{r dossacadas, fig.cap="Efectos de extraer una ficha sin reponerla o reponiéndola, sobre las condiciones que quedan para la segunda extracción.", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r dossacadas, fig.cap="Efectos de extraer una ficha sin reponerla o reponiéndola, sobre las condiciones que quedan para la segunda extracción.", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image92.png")
 ```
 
@@ -629,7 +629,7 @@ probabilidad se ajusta a los casos particulares, una vez que se cuenta con infor
 
 De manera general: sean $B_{1}, B_{2}, \ldots, B_{k}$ eventos mutuamente excluyentes que completan el espacio muestral (es decir que la unión de todos esos eventos es $\Omega$), y un evento $A$ puede suceder en intersección con cualquiera de ellos (es decir que $A$ puede suceder en intersección con $B_{1}$, o con $B_{2}$, etc.), como muestra la figura \@ref(fig:espaciobayes):
 
-```{r espaciobayes, fig.cap="Esquema de un evento A que puede suceder en intersección con varios eventos $B_{i}$ independientes entre sí", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r espaciobayes, fig.cap="Esquema de un evento A que puede suceder en intersección con varios eventos $B_{i}$ independientes entre sí", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image93.png")
 ```
 
@@ -645,13 +645,13 @@ Otro ejemplo es que los eventos $B$ sean solo dos:
 - $B_{2}$: no tener esa enfermedad
 Como se ve en la figura \@ref(fig:tienenotiene)  
 
-```{r tienenotiene, fig.cap="Solo dos eventos definen el espacio muestral", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r tienenotiene, fig.cap="Solo dos eventos definen el espacio muestral", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image94.png")
 ```
 
 Si el evento $A$ es "una prueba diagnóstica dio positiva", aparecen intersecciones entre el resultado de la prueba y la condición de las personas a quienes se aplica (figura \@ref(fig:intersposit). La primera es la zona dentro del círculo a la izquierda: ($A \cap B_{1}$), son los casos correctamente diagnosticados. El área que queda fuera del círculo a la izquierda representa casos en los que la prueba no indicó la enfermedad aun cuando se trataba de personas enfermas, se llaman "falsos negativos". A la derecha, la pequeña parte de círculo es ($A \cap B_{2}$) e indica los casos en que la prueba dio positiva cuando fue aplicada a personas que no tenían la enfermedad, se llaman "falsos positivos". Por último, la parte blanca del rectángulo a la derecha son los casos en que dio correctamente negativa en personas que no tenían la enfermedad.
 
-```{r intersposit, fig.cap="Intersecciones del evento A con $B_1$ y $B_2$", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r intersposit, fig.cap="Intersecciones del evento A con $B_1$ y $B_2$", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image95.png")
 ```
 

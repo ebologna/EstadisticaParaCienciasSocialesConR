@@ -462,7 +462,7 @@ resolver este problema tomando como unidad de selección a los radios censales, 
 área que se vaya a relevar), se selecciona aleatoriamente un número $n$ de ellas. Una vez identificadas las unidades primarias que constituirán
 la muestra (los radios censales) se relevan todos los hogares (unidades elementales) que residen en cada una de ellos.
 
-```{r radios, fig.cap="Radios censales 2010 de la ciudad de Río Cuarto, provincia de Córdoba, Argentina.", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r radios, fig.cap="Radios censales 2010 de la ciudad de Río Cuarto, provincia de Córdoba, Argentina.", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/radios-Rio-Cuarto.png")
 ```
 

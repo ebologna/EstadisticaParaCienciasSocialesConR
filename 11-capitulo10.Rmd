@@ -914,7 +914,7 @@ la nominal que el de Wald y que el exacto.
 
 En el sitio [https://istats.shinyapps.io/ExploreCoverage/](https://istats.shinyapps.io/ExploreCoverage/) se pueden hacer simulaciones para diferentes valores de proporción poblacional, confianza, tamaño de muestra y cantidad de muestras. Cada muestra aleatoria genera un intervalo de confianza y se observa si éste incluye o no al valor poblacional. La figura \@ref(fig:100intervaloscobertura) muestra una simulación que consiste en extraer 100 muestras de tamaño 50 de una población en la que la proporción vale $0.30$ y construir un intervalo de confianza al $95\%$ de confianza para cada una de ellas. La teoría predice que el $95\%$ de los intervalos incluirá al valor $P=0.30$, pero de los 100, 93 lo hacen (los verdes aciertan, los rojos no). Así, la probabilidad de cobertura es de 93%, que es menor que la nominal.  
 
-```{r 100intervaloscobertura, fig.cap="Simulación para el cálculo de la probabilidad de cobertura", fig.asp = 0.5, fig.align='center'}
+```{r 100intervaloscobertura, fig.cap="Simulación para el cálculo de la probabilidad de cobertura",fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/100intervaloscobertura.png")
 ```
 

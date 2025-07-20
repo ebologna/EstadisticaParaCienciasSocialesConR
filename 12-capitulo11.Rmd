@@ -1244,7 +1244,7 @@ probabilidades de $\overline{x}$ si $H_{0}$ fuera falsa ($\mu > \mu_{0}$) y
 la verdadera media poblacional fuera $\mu_{1}$ (que es una de las
 posibles entre las mayores que $\mu_{0}$).
 
-```{r etii5, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_{0}$ verdadera o falsa $(\\alpha = 0.05)$", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r etii5, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_{0}$ verdadera o falsa $(\\alpha = 0.05)$",fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/etii5.png")
 ```
 
@@ -1300,7 +1300,7 @@ ETII.
 
 Si se cambia el gráfico \@ref(fig:etii5), reduciendo el nivel de significación, ahora la posición relativa de las áreas de rechazo y no rechazo queda:
 
-```{r etii1, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_{0}$ verdadera o falsa $(\\alpha = 0.01)$", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r etii1, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_{0}$ verdadera o falsa $(\\alpha = 0.01)$",fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/etii1.png")
 ```
 
@@ -1315,7 +1315,7 @@ los gráficos \@ref(fig:etii5) y \@ref(fig:etii1) planteamos como "otra posibili
 Siendo $H_{0}$ falsa, $\mu$ puede tener distintos valores y ellos incidirán en la probabilidad de cometer ETII. En el gráfico siguiente, además de $\mu_{1}$ agregamos otras dos medias poblacionales posibles $\mu_{2}$ y $\mu_{3}$.
 
 
-```{r compHallarX, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_0$ verdadera o falsa, de tres modos diferentes", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r compHallarX, fig.cap="Comparación de la probabilidad de hallar a $\\overline{x}$ en zona de rechazo o no rechazo, según sea $H_0$ verdadera o falsa, de tres modos diferentes", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image188.png")
 ```
 
@@ -1337,7 +1337,7 @@ Preguntamos: si la verdadera media de nota al egreso fuera de 6.55, ¿cuál habr
 aceptado $H_{0}$? Dicho de otra forma ¿qué probabilidad hay de creer que la media sigue siendo 6.50 si en realidad ha aumentado a 6.55? Se trata de calcular la probabilidad de cometer ETII, que consiste en aceptar una $H_{0}$ que es falsa. A un nivel de significación del 5%, el punto crítico que habíamos encontrado es 6.60, por lo que:
 
 
-```{r etii, fig.cap="Ubicación de los tipos de error de la prueba si $H_{0}$ es verdadera o si es falsa", fig.asp = 0.1, fig.width = 2.7, fig.align='center'}
+```{r etii, fig.cap="Ubicación de los tipos de error de la prueba si $H_{0}$ es verdadera o si es falsa", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image189.png")
 ```
 

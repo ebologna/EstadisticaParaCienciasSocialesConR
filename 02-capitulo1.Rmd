@@ -63,7 +63,7 @@ Se lee que Clínica es un área preferida por cuatro estudiantes, Laboral y Educ
 
 Consideremos el siguiente cuestionario, que se aplicó en 2019 a personas con edades 18 y 35 años. 
 
-```{r cuestionario, fig.cap="Cuestionario 2019", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r cuestionario, fig.cap="Cuestionario 2019", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/cuestionario2019_01.png")
 knitr::include_graphics("imagenes/cuestionario2019_02.png")
 ```

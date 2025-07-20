@@ -427,7 +427,7 @@ Queda delimitada por debajo de $z=2$ un área de 0.9772. $P(z\leq2)=0.9772$.
 Si solicitamos las probabilidades acumuladas por debajo de diferentes valores de $z$, empezando con los negativos, pasando por el cero y siguiendo por los positivos, se obtiene la figura \@ref(fig:variasnormales).
 
 
-```{r variasnormales, fig.cap="Probabilidades acumuladas bajo la distribución normal para diferentes valores de $z$", fig.asp = 0.5, fig.width = 17, fig.align='center'}
+```{r variasnormales, fig.cap="Probabilidades acumuladas bajo la distribución normal para diferentes valores de $z$", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/ubicaciones_z.png")
 ```
 
