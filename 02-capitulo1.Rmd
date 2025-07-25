@@ -63,7 +63,7 @@ Se lee que Clínica es un área preferida por cuatro estudiantes, Laboral y Educ
 
 Consideremos el siguiente cuestionario, que se aplicó en 2019 a personas con edades 18 y 35 años. 
 
-```{r cuestionario, fig.cap="Cuestionario 2019", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r cuestionario, fig.cap="Cuestionario 2019", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/cuestionario2019_01.png")
 knitr::include_graphics("imagenes/cuestionario2019_02.png")
 ```
@@ -526,11 +526,11 @@ En el próximo capítulo nos detendremos en las formas de construir estos agrupa
 
 ```{r}
 aux_table <- tibble::tribble(
-  ~"Nivel de medición", ~"Significado de los símbolos numéricos", ~"Condición para cambio de escala", ~"Ubicación del cero",
+  ~"Nivel de medición", ~"Significado de los números", ~"Para cambiar de escala", ~"Ubicación del cero",
   "Nominal", "Designan, distinguen", "No repetir los números", "Sin significado",
-  "Ordinal", "Expresan orden", "Respetar el orden ascendente o descendente", "Sin signifcado",
-  "Intervalar", "Proporcionalidad de distancias", "$y = b_0 + b_1*x$", "Arbitrario",
-  "Proporcional", "Proporcionalidad de valores", "$y = b_1*x$", "Absoluto"
+  "Ordinal", "Expresan orden", "Respetar el orden", "Sin signifcado",
+  "Intervalar", "Proporcionalidad de distancias", "y = b_0 + b_1*x", "Arbitrario",
+  "Proporcional", "Proporcionalidad de valores", "y = b_1*x", "Absoluto"
 )
 kableExtra::kable_styling(
   knitr::kable(aux_table,

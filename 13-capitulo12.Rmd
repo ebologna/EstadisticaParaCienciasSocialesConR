@@ -901,7 +901,7 @@ los valores críticos correspondientes son $±2.05$, gráficamente:
 
 <!--falta-->
 
-```{r fig.cap="", fig.asp = 0.1, fig.width = 3, fig.align='center'}
+```{r fig.cap="", fig.align='center', out.width='80%'}
 knitr::include_graphics("imagenes/image209.png")
 ```
 

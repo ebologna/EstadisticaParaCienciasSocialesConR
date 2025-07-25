@@ -1275,7 +1275,7 @@ aux_table <- tibble::tribble(
   "Media: $\\mu$ (muestras pequeñas)", "$\\overline{x}$", "$\\frac{\\overline{x} - \\mu}{\\frac{\\sigma}{\\sqrt{n}}}$", "$t_{n - 1}$",
   "Número de éxitos en la población X", "$\\widehat{x}$", "", "$B(x, n,p)$",
   "Proporción de casos en una categoría: P (muestras grandes)", "$\\widehat{p}$", "$\\frac{\\widehat{p} - P}{\\sigma_{\\widehat{p}}}$", "$N(P,\\frac{P*(1 - P)}{n})$",
-  "Varianza: $\\sigma^{2}$", "$s^{2}$", "$\\frac{n - 1*s^{2}}{\\sigma^{2}}$", "$\\chi_{n - 1}^{2}$",
+  "Varianza: $\\sigma^{2}$", "$s^{2}$", "$\\frac{(n - 1)*s^{2}}{\\sigma^{2}}$", "$\\chi_{n - 1}^{2}$",
   "Cociente de varianzas: $\\frac{\\sigma_{1}^{2}}{\\sigma_{2}^{2}}$", "$\\frac{s_{1}^{2}}{s_{2}^{2}}$", "$\\frac{s_1^2*\\sigma_2^2}{s_2^2*\\sigma_1^2}$", "$F_{n_{1} - 1,n_{2} - 1}$"
 )
 knitr::kable(
