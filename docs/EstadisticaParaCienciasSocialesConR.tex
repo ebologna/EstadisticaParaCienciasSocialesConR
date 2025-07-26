@@ -17377,6 +17377,7 @@ El último renglón de la salida es el valor muestral, que conocíamos de la tab
 
 \begin{table}
 \centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
 \begin{tabular}{ccccc}
 \toprule
 Parámetro & Estimador & Estadístico de prueba & Puntos críticos en términos del estimador & Supuestos\\
@@ -17384,7 +17385,7 @@ Parámetro & Estimador & Estadístico de prueba & Puntos críticos en términos 
 \cellcolor{gray!10}{$\mu$} & \cellcolor{gray!10}{$\overline{x}$} & \cellcolor{gray!10}{$t = \frac{\overline{x} - \mu}{\frac{s}{\sqrt{n}}}$} & \cellcolor{gray!10}{${\overline{x}}_{c} = \mu \pm z*\frac{s}{\sqrt{n}}$} & \cellcolor{gray!10}{$n \geq 30$ ó distribución normal de *x* en la población}\\
 P & $\widehat{p}$ & $z = \frac{\widehat{p} - P}{\sqrt{\frac{P*(1 - P)}{n}}}$ & ${\widehat{p}}_{c} = P \pm z*\sqrt{\frac{P*(1 - P)}{n}}$ & $n*P \geq 5$ ó $n*(1 - P) \geq 5$\\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \end{table}
 
 Usando el valor \(p\), la lectura del resultado de la prueba de hipótesis
