@@ -47,7 +47,7 @@ porque "salir con la misma frecuencia que C" equivale a decir que, "en
 infinitas tiradas, la mitad de la veces saldrá X", por lo que
 escribiremos nuestra hipótesis nula así: $H_0: P=1/2$, a la que leeremos
 "la hipótesis nula afirma que la proporción de veces que saldrá cara es
-1/2". Como no es posible arrojar la moneda infinitas veces, generamos un conjunto de datos para hacer la prueba, tirando al moneda un nùmero finito de veces, digamos cien veces, esa es la muestra de tiradas.  
+1/2". Como no es posible arrojar la moneda infinitas veces, generamos un conjunto de datos para hacer la prueba, tirando al moneda un número finito de veces, digamos cien veces, esa es la muestra de tiradas.  
 Al arrojarla 100 veces esperaríamos -si la hipótesis nula se sostiene-, que
 salga aproximadamente 50 veces X. Las 100 tiradas son una muestra de las
 infinitas tiradas de la moneda, por lo que posiblemente no salga
@@ -91,7 +91,7 @@ rechazar la $H_{0}$, porque eso significa que se ha hallado algo de interés: qu
 
 ||
 |:--:|
-| La hipótesis nula es una **afirmación** sobre un **parámetro** que indica ausencia de diferencia en ralción a cierto valor de referencia. |
+| La hipótesis nula es una **afirmación** sobre un **parámetro** que indica ausencia de diferencia en relación a cierto valor de referencia. |
 
 El sentido de esa diferencia difiere según el tipo de prueba, veremos
 que hay pruebas que confrontan con valores históricos o con promedios
@@ -271,7 +271,7 @@ por el contrario, está entre -1.96 y 1.96 que pertenece a la parte de
 valores centrales de la distribución, los más probables. En
 consecuencia, la decisión es la de no rechazar $H_{0}$ y concluir que no hay evidencia para creer que el tiempo se tarda en completar la carrera haya cambiado respecto del valor histórico. Dicho de otra manera, el valor observado de
 ${\overline{x}}_{obs} = 7.50$ es un resultado esperable si la
-media poblacional fuera de $7.30$. Una media muestral de $7.50$ es compatible con una media problacional de $7.30$.
+media poblacional fuera de $7.30$. Una media muestral de $7.50$ es compatible con una media poblacional de $7.30$.
 
 Por la forma en que hemos razonado y tomado la decisión, se comprende
 que a los valores de $z$ comprendidos entre -1.96 y 1.96 se los denomine **zona de no rechazo de $H_{0}$**. El otro conjunto de valores de $z$, los mayores a 1.96 junto a los menores a -1.96, constituyen la **zona de rechazo de $H_{0}$**.
@@ -580,7 +580,7 @@ difiera. Por ejemplo, puede esperarse, en el ejemplo anterior, que la carrera es
 
 Notemos la diferencia con las pruebas que tratamos antes: al nivel de 5% buscábamos dos $z$ que dejaban en total 0.05 de área extrema (por encima y por debajo) o lo que es lo mismo, los dos $z$ que dejan el 95% del área central. Ahora, como la prueba es unilateral y solo nos interesan valores que se excedan, solo buscamos un $z$ crítico, el que deja al 5% por encima. Ese valor de $z_c$ es 1.64.[^83]
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un niel de significación del 5%"}
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un nivel de significación del 5%"}
 ggplot(data = data.frame(z = c(-4.4)), aes(z)) +
   geom_area(stat = "function", fun = dnorm, fill = "white", xlim = c(-4, qnorm(.95)), col = "black") +
   geom_area(stat = "function", fun = dnorm, fill = "green", xlim = c(qnorm(.95), 4), col = "black") +
@@ -855,7 +855,7 @@ $$X = P*n = 0.30*50 = 15$$
 
 Con lo que el punto crítico es el valor de $\widehat{x}$ que deja por
 encima (porque es una prueba unilateral derecha) al 5% de los valores
-posibles. Buscamos el percentil 95 de la distribución binomial corespondiente a los parámetros:
+posibles. Buscamos el percentil 95 de la distribución binomial correspondiente a los parámetros:
 $n = 50$, $P = 0.30$ y $P( X > x) = 0.05$
 
 La probabilidad es la de la cola derecha de la distribución, por ser una prueba unilateral derecha, y corresponde a una probabilidad acumulada de 0.95, de modo que el percentil es 95, que equivale a $P( X \leq x) = 0.95$ es:
@@ -1162,7 +1162,7 @@ que no hay efecto, por lo que cometer el ETI será creer que hay efecto
 (rechazar $H_{0}$) cuando en realidad no lo haya ($H_{0}$ verdadera). Como no
 sabemos si $H_{0}$ es verdadera o falsa, cada vez que rechacemos $H_{0}$
 debemos recordar que hay una probabilidad $\alpha$ de haber tomado una decisión
-incorrecta. Esta incertidumbre está siempre presente en evaluación humana en los campos psicológico y educativo, así como en la evaluación de efectos e impactos de programas de intervención social, o en la comparación de grupos para conocer diferencias entre varones y mujeres, medir los efectos del nivel de educación, etc. En general, está presente en la toma de decisión en contextos de incertidumbre, que son aquellos en que no se conocce a todos los elementos de una población, sino a una muestra de ellos.
+incorrecta. Esta incertidumbre está siempre presente en evaluación humana en los campos psicológico y educativo, así como en la evaluación de efectos e impactos de programas de intervención social, o en la comparación de grupos para conocer diferencias entre varones y mujeres, medir los efectos del nivel de educación, etc. En general, está presente en la toma de decisión en contextos de incertidumbre, que son aquellos en que no se conoce a todos los elementos de una población, sino a una muestra de ellos.
 
 Ejemplo ilustrativo: las preguntas de un examen oral son una muestra de
 lo que quien está rindiendo sabe y, si se usa un bolillero, la elección del tema que debe desarrollarse es aleatoria. Supongamos que alguien va a un examen y ha estudiado muy poco, pero la unidad que le toca desarrollar es la única que sí estudió.  
@@ -1210,7 +1210,7 @@ aspectos fundamentales de las pruebas de hipótesis:
 
 - Toda conclusión proveniente de estos procedimientos está sujeta a error.
 
-Y estos no son problemas del procedimiento de prueba de hipótesis, sino que es reflejo de las posibilidades humanas de contruir conocimiento: no hay certezas, solo hay aproximaciones.  
+Y estos no son problemas del procedimiento de prueba de hipótesis, sino que es reflejo de las posibilidades humanas de construir conocimiento: no hay certezas, solo hay aproximaciones.  
 
 ## *ETII:* $\mu$, $\alpha$ y $n$
 
@@ -1667,7 +1667,7 @@ cálculo del valor $p$ es equivalente, solo que se realiza en términos de
 la variable *número de éxitos*. En el ejemplo, el número observado de
 éxitos era de 16, la probabilidad condicional que corresponde al valor $p$ es entonces la probabilidad de hallar en la muestra de 50 casos, 16
 personas o más que vayan a votar al candidato, si en la población la
-proporción de quienes lo votarán fuera de 30% ($H_0$ verdadera). Se complementa la probabilildad acumulada hasta 15 (variable dicreta):
+proporción de quienes lo votarán fuera de 30% ($H_0$ verdadera). Se complementa la probabilidad acumulada hasta 15 (variable discreta):
 
 ```{r echo=TRUE}
 round(1 - pbinom(15, 50, .3), 4)
@@ -1743,7 +1743,7 @@ Además de operar internamente con la distribución *t de Student*, los
 programas de análisis de datos ofrecen los resultados de las pruebas de
 hipótesis siempre en términos del valor $p$. Eso permite que quien lee
 la salida pueda decidir si rechaza o no rechaza la $H_{0}$, de acuerdo al
-nivel de significación que haya fijado. Para facilitar la interpretación, los programas de análisis de datos indican la "fuerza de la evidencia", que se espresa en cuán pequeño es el valor $p$, con asteriscos $*$ simples, dobles, etc. La interpretación es la siguiente: 
+nivel de significación que haya fijado. Para facilitar la interpretación, los programas de análisis de datos indican la "fuerza de la evidencia", que se expresa en cuán pequeño es el valor $p$, con asteriscos $*$ simples, dobles, etc. La interpretación es la siguiente: 
 
 | Símbolo  | Significado      |
 |----------|------------------|
@@ -1851,7 +1851,7 @@ round(
         weights =ENFR2013$PONDERACION))), 3) * 100
 ```
 
-Que expande los aproximadamente 35 mil casos relevados a casi 26 millones de la población a la que la ENFR2013 representa. Las frecuencias relativas de las dos tablas son similares. Aplicar los ponderadores es útil para observar medidas descriptivas, pero no puede usarse para hacer inferencias, ya que se incrementaría de manera artificial el tamaño de la muestra. Esto debe cuidarse en algunos programas de análisis de datos, que permiten fijar poderadores y dejarlos activos para cualquier procedimiento. Una prueba de hipótesis o un intervalo de confianza realizado con los factores de ponderación están mal calculados, porque el tamaño de muestra es falso. Salvo en el caso que los ponderadores estén reescalados a $1$, porque así no se altera el tamaño de la muestra, solo se ajusta su composición.  
+Que expande los aproximadamente 35 mil casos relevados a casi 26 millones de la población a la que la ENFR2013 representa. Las frecuencias relativas de las dos tablas son similares. Aplicar los ponderadores es útil para observar medidas descriptivas, pero no puede usarse para hacer inferencias, ya que se incrementaría de manera artificial el tamaño de la muestra. Esto debe cuidarse en algunos programas de análisis de datos, que permiten fijar ponderadores y dejarlos activos para cualquier procedimiento. Una prueba de hipótesis o un intervalo de confianza realizado con los factores de ponderación están mal calculados, porque el tamaño de muestra es falso. Salvo en el caso que los ponderadores estén reescalados a $1$, porque así no se altera el tamaño de la muestra, solo se ajusta su composición.  
 
 Para realizar la prueba sobre la proporción, se debe construir la categoría de referencia, que en este caso es la 3 de las tablas anteriores (obesidad). Se genera una nueva variable, que se llamará "obesidad" en la matriz de datos, de tal modo que: cuando "IMC_agrupado" valga 3 tengamos lo que llamamos "éxito"; cuando sea 9, sea un caso perdido (NA): y si vale 1 ó 2, vale cero.  
 Luego se verifica que las nuevas categorías coincidan con las previstas, por medio de una tabla bivariada entre la variable original y la nueva. Una tabla univariada da los absolutos de "obesidad" y finalmente los relativos, donde se ve que en la muestra, la proporción de personas con obesidad es del $21\%$.
@@ -1889,7 +1889,7 @@ knitr::kable(
   aux_table, kable_outp,
   booktabs = TRUE, align = "ccccc", escape = FALSE,
 ) %>%
-  kableExtra::kable_styling(latex_options = "striped")
+  kableExtra::kable_styling(latex_options = c("striped", "scale_down"))
 ```
 
 Usando el valor $p$, la lectura del resultado de la prueba de hipótesis

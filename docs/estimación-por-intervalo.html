@@ -602,7 +602,7 @@ construirá un intervalo, que dirá, por ejemplo, “hay una confianza del
 95% en que el intervalo <span class="math inline">\([6.10; 6.90]\)</span> contiene al promedio con que se termina esa carrera”. De manera equivalente, en
 lugar de “entre quienes egresan hay alrededor del 70% de mujeres”, se
 afirmará algo como “con una confianza del 95%, el intervalo <span class="math inline">\([68; 72]\)</span>%
-contiene a la proporción de mujeres sobre el total quienes egresan”. O que “con una confianza del 95%, el ingreso salarial promedio de los trabajadores del aglomerado Gran Córdoba está entre <span class="math inline">\(16710.5\)</span> y <span class="math inline">\(17010.5\)</span>. Y también que en la población mayor de 18 años residente en países de América Latina, hay una confianza de 90% que la propoción de quienes creen que se puede confiar en la mayoría de la gente, esté en el intervalo <span class="math inline">\([14.20, 14.49]\)</span>%.</p>
+contiene a la proporción de mujeres sobre el total quienes egresan”. O que “con una confianza del 95%, el ingreso salarial promedio de los trabajadores del aglomerado Gran Córdoba está entre <span class="math inline">\(16710.5\)</span> y <span class="math inline">\(17010.5\)</span>. Y también que en la población mayor de 18 años residente en países de América Latina, hay una confianza de 90% que la proporción de quienes creen que se puede confiar en la mayoría de la gente, esté en el intervalo <span class="math inline">\([14.20, 14.49]\)</span>%.</p>
 <p>Vemos entonces que esta forma de estimar ofrece dos números, los límites de un intervalo, del que esperamos contenga al parámetro que estimamos.
 Decimos “esperamos que se contenga” porque no hay certeza absoluta de
 que se encuentre allí, hay una <em>confianza</em> que en estos ejemplos hemos
@@ -641,7 +641,7 @@ distribución es la de la figura <a href="estimación-por-intervalo.html#fig:med
 Figura 10.1: Distribución de las medias muestrales
 </p>
 </div>
-<p>Ya sabemos que una variable que tenga distribución normal tiene probabilidad 0.95 de tomar un valor que diste menos de <span class="math inline">\(1.96\)</span> desviaciones estándar de la media. Eso mismo, dicho en términos frecuenciales implica que, bajo el modelo normal, el 95% de los casos se encuentra entre 1.96 desviacioens estándar por debajo y 1.96 desviaciones estándar por encima de la media. Por lo cual, si extrajéramos todas las muestras de tamaño <span class="math inline">\(n\)</span> posibles de esa población, el 95% de ellas estaría entre <span class="math inline">\(\mu - 1.96*\sigma_{\overline{x}}\)</span> y <span class="math inline">\(\mu + 1.96*\sigma_{\overline{x}}\)</span>, o lo que es lo mismo, entre <span class="math inline">\(\mu - 1.96*\frac{\sigma}{\sqrt{n}}\)</span> y <span class="math inline">\(\mu + 1.96*\frac{\sigma}{\sqrt{n}}\)</span>.</p>
+<p>Ya sabemos que una variable que tenga distribución normal tiene probabilidad 0.95 de tomar un valor que diste menos de <span class="math inline">\(1.96\)</span> desviaciones estándar de la media. Eso mismo, dicho en términos frecuenciales implica que, bajo el modelo normal, el 95% de los casos se encuentra entre 1.96 desviaciones estándar por debajo y 1.96 desviaciones estándar por encima de la media. Por lo cual, si extrajéramos todas las muestras de tamaño <span class="math inline">\(n\)</span> posibles de esa población, el 95% de ellas estaría entre <span class="math inline">\(\mu - 1.96*\sigma_{\overline{x}}\)</span> y <span class="math inline">\(\mu + 1.96*\sigma_{\overline{x}}\)</span>, o lo que es lo mismo, entre <span class="math inline">\(\mu - 1.96*\frac{\sigma}{\sqrt{n}}\)</span> y <span class="math inline">\(\mu + 1.96*\frac{\sigma}{\sqrt{n}}\)</span>.</p>
 <div class="figure"><span style="display:block;" id="fig:int95"></span>
 <img src="EstadisticaParaCienciasSocialesConR_files/figure-html/int95-1.svg" alt="Intervalo en torno a la media poblacional que incluye al 95% de las posibles medias muestrales" width="672" />
 <p class="caption">
@@ -979,7 +979,7 @@ que la primera estimación es más precisa, tiene menos error.
 Con la estimación de los ingresos salariales sucedió lo mismo, al 95% el error 674.80 fue y al 99% subió a 884.80.
 Del mismo modo, al estimar, con una confianza del 95%, la proporción de
 quienes aprobaron el parcial escribimos <span class="math inline">\(0.920 \pm 0.032\)</span>, el error de
-estimación es en este caso de 0.032 (ó 3.2%). La estimación de la proporción de gente que cree que se puede confiar en los demas, hecha con el mismo nivel de confianza, arrojó un error de estimación de 0.0056, 0.56%.</p>
+estimación es en este caso de 0.032 (ó 3.2%). La estimación de la proporción de gente que cree que se puede confiar en los demás, hecha con el mismo nivel de confianza, arrojó un error de estimación de 0.0056, 0.56%.</p>
 <div id="el-error-de-estimación-en-la-media" class="section level3 hasAnchor" number="10.5.1">
 <h3><span class="header-section-number">10.5.1</span> El error de estimación en la media<a href="#el-error-de-estimaci%C3%B3n-en-la-media" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En la expresión general de la estimación por intervalo de <span class="math inline">\(\mu\)</span>, el
@@ -999,7 +999,7 @@ mencionado sobre estimación, supone que se trata de muestras
 probabilísticas, es decir muestras aleatorias, para las cuales rigen las leyes de probabilidad que hemos usado. Si la muestra no es aleatoria, no se pueden hacer estimaciones con estos procedimientos y; esto es muy importante: no se mejora una muestra tomando más casos. Si la muestra no es probabilística, la estimación no mejorará porque se tomen muchos casos.</p>
 <p>La distribución <span class="math inline">\(t\)</span> de Student tiene aplicación cuando se trata de muestras pequeñas, sin embargo, como se señaló antes, cuando los grados de libertad aumentan, esta distribución se aproxima a la normal. Por esta razón, al construir los intervalos, no hay inconveniente en calcular los percentiles que corresponden al nivel de confianza elegido, usando el modelo <span class="math inline">\(t\)</span>. Si la muestra es suficientemente grande, el resultado será el mismo que con la normal. Así se evita decidir cada vez, en base al tamaño de la muestra, si se usa una distribución o la otra. Por esa razón, de aquí en adelante, calcularemos los percentiles necesarios para estimar la media, con la distribución <span class="math inline">\(t\)</span> con <span class="math inline">\(n-1\)</span> grados de libertad.</p>
 <p>Para ejemplificar los efectos de los diferentes elementos en el error de
-estimación, usaremos la base de la Encuesta Nacional sobre Prevalencias de Consumo de Sustancias Psicoactivas 2011. Con esos datos, estimaremos la edad promedio a la que las personaslos encuestadas dicen que tomaron alcohol por primera vez en su vida. La variable se llama BIBA03 y corresponde a la siguiente pregunta del cuestionario:</p>
+estimación, usaremos la base de la Encuesta Nacional sobre Prevalencias de Consumo de Sustancias Psicoactivas 2011. Con esos datos, estimaremos la edad promedio a la que las personas encuestadas dicen que tomaron alcohol por primera vez en su vida. La variable se llama BIBA03 y corresponde a la siguiente pregunta del cuestionario:</p>
 <p>¿Qué edad tenía cuando consumió bebidas alcohólicas por primera vez?
 (Edad en años)
 Cuya descripción es la siguiente:</p>
@@ -1406,7 +1406,7 @@ parámetro.</strong></p>
 </div>
 <div id="intervalo-para-la-proporción" class="section level3 hasAnchor" number="10.7.2">
 <h3><span class="header-section-number">10.7.2</span> Intervalo para la proporción<a href="#intervalo-para-la-proporci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Para estimar la propoción de personas inactivas a partir de la base de la EPH, hay que definir a esa categoría como la de referencia (1) en la variable “ESTADO” y asignar cero a las demás categorias. Para hacerlo, definimos “inactives”, como una nueva variable de la base eph.3.18 cuyo valor dependerá del que tenga “ESTADO”. Si “ESTADO” vale:</p>
+<p>Para estimar la proporción de personas inactivas a partir de la base de la EPH, hay que definir a esa categoría como la de referencia (1) en la variable “ESTADO” y asignar cero a las demás categorías. Para hacerlo, definimos “inactives”, como una nueva variable de la base eph.3.18 cuyo valor dependerá del que tenga “ESTADO”. Si “ESTADO” vale:</p>
 <ul>
 <li>3 (inactivo), entonces “inactives” vale 1</li>
 <li>0 o 4, “inactives” no se cuenta, porque son entrevistas no realizadas, o menores de 10 años, corresponde NA</li>
@@ -1427,7 +1427,7 @@ parámetro.</strong></p>
 ##   3       0 23167 23167
 ##   4       0     0     0
 ##   Sum 25268 23167 48435</code></pre>
-<p>La nueva variable (inactives) tiene 25268 casos en el valor cero, que corresponden a 23398 a ESTADO = 1 (ocupados) más 1870 de ESTADO = 2 (desocupado) y 23167 casos en el valos uno, que son los 23167 de ESTADO = 3 (inactivo). El total de casos es ahora 48435, porque se quitaron los ceros y los cuatros.<br />
+<p>La nueva variable (inactives) tiene 25268 casos en el valor cero, que corresponden a 23398 a ESTADO = 1 (ocupados) más 1870 de ESTADO = 2 (desocupado) y 23167 casos en el valor uno, que son los 23167 de ESTADO = 3 (inactivo). El total de casos es ahora 48435, porque se quitaron los ceros y los cuatros.<br />
 Ahora la estimación al 95% de la proporción poblacional de personas inactivas, por método de Clopper-Pearson requiere que calculemos los cuantiles .025 y .975 de la distribución binomial con <span class="math inline">\(n=48435\)</span> y <span class="math inline">\(p=23167/48435=0.478=47.8\%\)</span> y que los dividamos por el tamaño de la muestra.</p>
 <div class="sourceCode" id="cb557"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb557-1"><a href="estimación-por-intervalo.html#cb557-1" tabindex="-1"></a>Li <span class="ot">&lt;-</span> <span class="fu">qbinom</span>(.<span class="dv">025</span>, <span class="dv">48435</span>, .<span class="dv">478</span>) <span class="sc">/</span> <span class="dv">48435</span></span>
 <span id="cb557-2"><a href="estimación-por-intervalo.html#cb557-2" tabindex="-1"></a>Ls <span class="ot">&lt;-</span> <span class="fu">qbinom</span>(.<span class="dv">975</span>, <span class="dv">48435</span>, .<span class="dv">478</span>) <span class="sc">/</span> <span class="dv">48435</span></span>
@@ -1444,7 +1444,7 @@ Ahora la estimación al 95% de la proporción poblacional de personas inactivas,
 </div>
 <div id="cobertura" class="section level3 hasAnchor" number="10.7.3">
 <h3><span class="header-section-number">10.7.3</span> Cobertura<a href="estimación-por-intervalo.html#cobertura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Los siguientes comandos generan 200 intervalos para estimar la media de ingresos salariales de la EPH a partir de 200 muestras, de tamaño 30. Es una simulación, porque se trata a los datos de la EPH como si fuera una población y a la media de los ingresos saariales de la EPH como si fuera el parámetro poblacional. El ejercicio sirve para observar el efecto, por ejemplo del tamaño de la muestra. La sintaxis dice lo siguiente:</p>
+<p>Los siguientes comandos generan 200 intervalos para estimar la media de ingresos salariales de la EPH a partir de 200 muestras, de tamaño 30. Es una simulación, porque se trata a los datos de la EPH como si fuera una población y a la media de los ingresos salariales de la EPH como si fuera el parámetro poblacional. El ejercicio sirve para observar el efecto, por ejemplo del tamaño de la muestra. La sintaxis dice lo siguiente:</p>
 <ul>
 <li>Se definen:
 <ul>
@@ -1491,7 +1491,7 @@ Ahora la estimación al 95% de la proporción poblacional de personas inactivas,
 ## 4          8808.0         17592.0                    si
 ## 5         14672.3         23047.7                    si
 ## 6         16968.9         25897.7                    no</code></pre>
-<p>Y resumirse en una distridición de frecuencias:</p>
+<p>Y resumirse en una distribución de frecuencias:</p>
 <div class="sourceCode" id="cb565"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb565-1"><a href="estimación-por-intervalo.html#cb565-1" tabindex="-1"></a>(tabla_cobertura <span class="ot">&lt;-</span> <span class="fu">freq</span>(resultado<span class="sc">$</span>contiene_al_parametro, <span class="at">report.nas =</span> <span class="cn">FALSE</span>, <span class="at">cumul =</span> <span class="cn">FALSE</span>))</span></code></pre></div>
 <pre><code>## Frequencies  
 ## resultado$contiene_al_parametro  

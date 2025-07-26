@@ -8,7 +8,7 @@ source("depencias.R")
 ```
 
 # Probabilidad: los modelos
-Un modelo es una representación simplificada de un proceso observable, es una formalización de algunos aspectos de la realidad. La expresión "todos los modelos son erroneos, pero algunos son útiles" atribuida  a @Box1987, sintetiza la idea de simplificación, de recorte, de selección deliberada de algunos componentes para describir, explicar y predecir. Por definición, un modelo es teórico y propone articulación entre conceptos, con nexos deductivos, inductivos, de analogía, etc. No es
+Un modelo es una representación simplificada de un proceso observable, es una formalización de algunos aspectos de la realidad. La expresión "todos los modelos son erróneos, pero algunos son útiles" atribuida  a @Box1987, sintetiza la idea de simplificación, de recorte, de selección deliberada de algunos componentes para describir, explicar y predecir. Por definición, un modelo es teórico y propone articulación entre conceptos, con nexos deductivos, inductivos, de analogía, etc. No es
 arbitrario, ya que deben tenerse razones para suponer que el modelo se
 sostiene: no es espera que esté en contradicción con lo que se observa, pero en todos los casos es una aproximación a lo que sucede en
 la realidad. Tratamos de modelar (o modelizar) lo que observamos a fin
@@ -210,7 +210,7 @@ Para pedir la probabilidad acumulada, como por ejemplo la de obtener tres caras 
 round(pbinom(3, size = 4, prob = 0.5), 4)
 ```
 
-Que es la suma de las probabillidades exactas desde cero hasta tres:  
+Que es la suma de las probabilidades exactas desde cero hasta tres:  
 ```{r}
 dbinom(3, size = 4, prob = 0.5) +
   dbinom(2, size = 4, prob = 0.5) +
@@ -238,7 +238,7 @@ dbinom(15, 15, .7)
 ```
 
 Y se expresa así: $$P(X=15)=B(15,15,.7)=0.0047$$   
-Al final del capítulo veremos con más detalle cómo pedir estas probabiidades a R.  
+Al final del capítulo veremos con más detalle cómo pedir estas probabilidades a R.  
 
 
 ### Esperanza y varianza
@@ -289,7 +289,7 @@ grid.arrange(grobs = ggps, ncol = 2)
 ```
 
 Observemos la forma en que aparece representada la diferencia entre las
-varianzas de las distribuciones, la màxima ocurre con $p=0.50$.
+varianzas de las distribuciones, la máxima ocurre con $p=0.50$.
 
 ## Distribución normal
 
@@ -541,7 +541,7 @@ La regla empírica que se mencionó antes tiene aquí su origen. Ya que si la di
 
 ### Cuantiles
 
-De mismo modo que con las distribuciones de frecuencia, los valores de la variable que acumulan una determinada probabilidad son los cuantiles. El valor $z=-1$ es el cuantil $0.1587$ de la variable y $z=2$  es el cuantil $0.9772$, que suelen leerse como percentiles 15.87 y 97.72 respectivmente.
+De mismo modo que con las distribuciones de frecuencia, los valores de la variable que acumulan una determinada probabilidad son los cuantiles. El valor $z=-1$ es el cuantil $0.1587$ de la variable y $z=2$  es el cuantil $0.9772$, que suelen leerse como percentiles 15.87 y 97.72 respectivamente.
 
 Para determinar ahora los valores de $z$ que acumulan cierta probabilidad, se necesita la operación inversa a la que se realizó hasta aquí, porque hay que hallar cuál es el valor de la variable ($z$) que deja por debajo una determinada probabilidad. Según la definición de percentiles, el percentil $P_{r}$ de la variable es el valor por debajo del cual la probabilidad de hallarla es $r\%$. Gráficamente, se trataría de fijar el área ($r\%$) y el problema es determinar cuál es el $z$ que la acumula.
 
@@ -780,7 +780,7 @@ Toda variable que puede modelarse con una distribución normal puede
 transformarse a puntaje $z$ y así hallar la probabilidad asociada a
 diferentes intervalos.
 
-Hemos realizado las operaciones de este modo hasta aquí, porque es importante tener clara la relación entre las variable concreta que se mide u observa, con la variable abstracta, $z$. Sin embargo, es posible solicitar las probabilidades a cualquier software o calculadora de probabilidades a partir de los valores de la variable original, siempre y cuando se informe la media y la desviación estándar. Para obtener el resultado de manera directa, sin pasar por $z$, aa probabilidad es:
+Hemos realizado las operaciones de este modo hasta aquí, porque es importante tener clara la relación entre las variable concreta que se mide u observa, con la variable abstracta, $z$. Sin embargo, es posible solicitar las probabilidades a cualquier software o calculadora de probabilidades a partir de los valores de la variable original, siempre y cuando se informe la media y la desviación estándar. Para obtener el resultado de manera directa, sin pasar por $z$, la probabilidad es:
 
 $$P(3500 < x < 4500)$$
 
@@ -1032,7 +1032,7 @@ Que dice que $$P(t_{1} \leq 2)=0.8524$$
 
 Su ubicación gráfica es la de \@ref(fig:tmenor2):
 
-```{r tmenor2, fig.cap="Área correspondiente a la probabilidad de hallar una variable con ditribución t con un grado de libertad por debajo de 2"}
+```{r tmenor2, fig.cap="Área correspondiente a la probabilidad de hallar una variable con distribución t con un grado de libertad por debajo de 2"}
 ggplot(NULL, aes(c(-8, 8))) +
   geom_area(stat = "function", fun = dt, args = list(df = 1), col = "black", fill = "green", xlim = c(-8, 2)) +
   geom_area(stat = "function", fun = dt, args = list(df = 1), col = "black", fill = "white", xlim = c(2, 8)) + ylab("") + xlab("") +
@@ -1142,7 +1142,7 @@ round((1 - pf(4, 3, 2)), 4)
 
 De modo que $P(F_{3,2} > 4) = 0.2064$.
 
-El percentil 95 de una distrindución F con 3 grados de libertad en el numerador y dos en el denominador es:
+El percentil 95 de una distribución F con 3 grados de libertad en el numerador y dos en el denominador es:
 
 ```{r}
 round(qf(.95, 3, 2), 4)
@@ -1264,7 +1264,7 @@ round((pnorm(8, 5, 2) - pnorm(6, 5, 2)), 4)
 ```
 
 #### Chi cuadrado  
-La probabilidad de hallar una variable con distribución $\chi^2$ con 15 grados de libertad, por debajo de 10, se escribe $P(\chi^2_{15}<10)$ yse solicita:
+La probabilidad de hallar una variable con distribución $\chi^2$ con 15 grados de libertad, por debajo de 10, se escribe $P(\chi^2_{15}<10)$ y se solicita:
 ```{r echo=TRUE}
 pchisq(10, 15)
 ```
@@ -1382,7 +1382,7 @@ Y se escribe: $P(F_{5,13}<4.86)=0.99)$, que es lo mismo que $P(F_{5,13}>4.86)=0.
 
 En lo que sigue será frecuente que se necesiten percentiles de la variable que delimitan determinadas áreas centrales de la distribución. Cualquiera sea el modelo de probabilidad que se use, suele denominarse ($1-\alpha$) al área central, con lo que $\alpha$ es el área que queda por fuera de la zona central, dividida en dos. Los cuantiles que delimitan esa área central de ($1-\alpha$) son ($\frac{\alpha}{2}$) y ($1-\frac{\alpha}{2}$).
 
-Por ejemplo, para determinar cuáles son los valores de una distribución $\chi^2$ con 13 grados delibertad que delimitan un 90% de área central, calculamos $\alpha$, que es el 10% restante y los cuantiles son: 0.05 ($\frac{\alpha}{2}$) y 0.95 ($1-\frac{\alpha}{2}$). 
+Por ejemplo, para determinar cuáles son los valores de una distribución $\chi^2$ con 13 grados de libertad que delimitan un 90% de área central, calculamos $\alpha$, que es el 10% restante y los cuantiles son: 0.05 ($\frac{\alpha}{2}$) y 0.95 ($1-\frac{\alpha}{2}$). 
 ```{r echo=TRUE}
 qchisq(.05, 13)
 qchisq(.95, 13)
@@ -1425,7 +1425,7 @@ ggplot(NULL, aes(c(0, 30))) +
 [^51]: Con lo que hemos elegido tomar como éxito el resultado *cara*
 
 [^55]: El nombre "normal" de este modelo no hace referencia al sentido
-    coloquial del término, como juico acerca de la salud o el
+    coloquial del término, como juicio acerca de la salud o el
     comportamiento humano, sino a un modelo de distribución en el que es
     más frecuente hallar valores cercanos al promedio y resultan
     igualmente infrecuentes valores extremos mayores o menores.

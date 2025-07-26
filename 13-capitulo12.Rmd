@@ -77,7 +77,7 @@ el otro; o lo que es lo mismo, que las diferencias son cero (nulas). En
 la hipótesis alternativa se planteará la situación opuesta, sea
 bilateral (que las medias difieren) o unilateral (que una media es mayor que la otra).
 
-Estos procedimientos no sólo se utilizan en experimentos -que contruyen los grupos con criterios preestablecidos-, sino también en estudios que analizan datos de observación, que pueden provenir de encuestas o de observación directa. Así una variable independiente puede constituirse por
+Estos procedimientos no sólo se utilizan en experimentos -que construyen los grupos con criterios preestablecidos-, sino también en estudios que analizan datos de observación, que pueden provenir de encuestas o de observación directa. Así una variable independiente puede constituirse por
 grupos o muestras de sujetos que conforman categorías diferentes.
 Varones versus mujeres, población rural versus población urbana, estudiantes de escuela primaria
 que repiten o no repiten un grado. Pueden interesar entonces, ciertas
@@ -232,7 +232,7 @@ numerador y $n_{2} - 1$ grados de libertad en el denominador.
 
 
 Ejemplo 1. (datos ficticios): nos preguntamos si, para una carrera
-universitaria dada, el tiempo que tardan en completar sus estudios quienes trabajan es el mismo que el que les requiere a quines no lo hacen, o si difiere.
+universitaria dada, el tiempo que tardan en completar sus estudios quienes trabajan es el mismo que el que les requiere a quienes no lo hacen, o si difiere.
 Para ello tomamos una muestra de 100 estudiantes que trabajan y obtenemos una media de duración de la carrera de 6.7 años y una desviación estándar de 1.2 años. Extraemos otra muestra, de 150 casos que no trabajan, en la que obtenemos un promedio de los años de duración de 6.3 con una desviación estándar de 1.5 años. Todos estos datos provienen de la información descriptiva que proveen las muestras, son los que vamos a usar para hacer la inferencia acerca de las
 poblaciones, constituidas por el total de quienes trabajan y no
 trabajan.
@@ -454,10 +454,10 @@ t.test(edad ~ sexo)
 ```
 
 El título es el de prueba t de dos muestras de Welch, que se refiere a la corrección de Welch-Satterthwaite. Se indican los datos, que es edad según sexo (la comparación de las edades según sexo).  
-Lugo se ofrece el valor $t_{obs}$, de -1.99, los grados de libertad y el valor $p$, de 0.048. Se indica cuál fue la hipotesis alternativa (que las medias difieres, es decir bilateral).  
+Lugo se ofrece el valor $t_{obs}$, de -1.99, los grados de libertad y el valor $p$, de 0.048. Se indica cuál fue la hipótesis alternativa (que las medias difieres, es decir bilateral).  
 Luego se lee un intervalo de confianza para estimar la diferencia de las media, construido, por defecto al 95% y, finalmente las medias muestrales.
 
-La lectura de esta salida es que, a un nivel de significación del 5%, hay evidencia para rechazar la hipótesis de igualdad de las medias poblacionales, dado que el valor $p$ hallado es menor a ese criterio. Pero si se reduce el riesgo de cometer error de tipo I y se baja el  nivel de sigificación al 1%, entonces el resultado ya no es significativo a este nivel. La lectura del resultado debe incluir esta interpretación, para que quede constancia que la $H_{0}$ ha sido rechazada con poca evidencia en su contra.  
+La lectura de esta salida es que, a un nivel de significación del 5%, hay evidencia para rechazar la hipótesis de igualdad de las medias poblacionales, dado que el valor $p$ hallado es menor a ese criterio. Pero si se reduce el riesgo de cometer error de tipo I y se baja el  nivel de significación al 1%, entonces el resultado ya no es significativo a este nivel. La lectura del resultado debe incluir esta interpretación, para que quede constancia que la $H_{0}$ ha sido rechazada con poca evidencia en su contra.  
 Un dato adicional que obtenemos en la salida es el intervalo de confianza que estima la diferencia poblacional. Leemos que, con una confianza del 95%, el intervalo que va de 0.007 a 2.280, contiene a la diferencia de edades que hay en la población. Para la lectura del intervalo no se tiene en cuenta el signo negativo, que proviene  de haber restado $edad.mujeres - edad.varones$ y que habría sido positivo de haber elegido restar en otro orden. Sí importa, por el contrario, que los signos de los límites sean iguales (ambos positivos o ambos negativos) porque eso quiere decir que, al nivel de confianza establecido, se excluye al cero del intervalo. Por eso este resultado es siempre compatible con la decisión de aceptar o rechazar $H_{0}$, al mismo nivel de significación.
 
 Cuando una prueba de hipótesis sobre diferencia de medias se rechaza a un nivel de significación $\alpha$, entones, un intervalo construido con una confianza del $1-\alpha$, excluye al cero entre sus límites. Dicho de otra manera, el límite inferior y el límite superior tienen el mismo signo.
@@ -1105,7 +1105,7 @@ t.test(hijes ~ grupo_edad, data = adultes_mayores, alternative = "less")
 
 ### Prueba apareada
 
-Se contruye la matriz de datos ficticios:  
+Se construye la matriz de datos ficticios:  
 
 ```{r echo=TRUE}
 antes <- c(5, 4, 6, 3, 4, 5, 7)
@@ -1121,7 +1121,7 @@ t.test(antes, despues, data = para_prueba_apareada, paired = TRUE)
 
 ### Coeficiente de correlación
 
-Sea que se cuenta con datos de 27 estudiantes sobre el tiempo dedicado a preparar un parcial (`tiempo_prep`) y la calificación obtenida (`calif`). Para solicitar la prueba de significación sobre el coeficiente r de Pearson, simplememente se solicita:
+Sea que se cuenta con datos de 27 estudiantes sobre el tiempo dedicado a preparar un parcial (`tiempo_prep`) y la calificación obtenida (`calif`). Para solicitar la prueba de significación sobre el coeficiente r de Pearson, simplemente se solicita:
 
 ```{r echo=TRUE}
 cor.test(tiempo_prep, calif)

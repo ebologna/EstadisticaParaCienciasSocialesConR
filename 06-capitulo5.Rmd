@@ -853,7 +853,7 @@ Cuando se trabaja con variables dicotómicas, estas pueden tener dos
 orígenes diferentes; hay dicotomías reales y las hay artificiales. Las primeras son variables que por su construcción, solo admiten dos
 categorías, como turno (mañana - tarde), sexo (varón - mujer), grupo
 (experimental - control). Las segundas, provienen de haber
-recategorizado una variable continua en dos grupos, como puntaje (alto - bajo), ingresos medidos según línea de pobreza (pobre - no pobre), resultado de un examen (aprobado - no aprobado), posición política (izquierda - derecha). Esta situación es especialmente interesante en la medición de rasgos latentes a los que se considera continuos, pero que se miden de manera dicotómica. Por ejemplo, la actitud hacia la política, puede ir desde el desinterés completo hasta la participación activa, pudiendo identificarse graduaciones entre esos extremos. Si se usa la afiliación a un partido como indicador de participación, se toma una medida dicotómica (está afiliado - no está afiliado); esta dicotomización se considera artificial, porque se supone que es un punto de corte que define dos categorías en un continuo. La distición entre estudiantes que *promovieron* y que *no promovieron* es una dicotomizacion sobre una variable originalmente continua: el promedio de las notas. Clasificar a los países en *desarrollados* y *en vías de desarrollo*, implica cortar en dos (dicotomizar) un conjunto de indicadores de desarrollo, que son continuos (PIB per cápita, educación, etc.). Lo cual es diferente de distinguir países *con arsenal nuclear* y *sin arsenal nuclear*, porque aquí no hay graduación entre las categorías, esta última es una dicotomía real.
+recategorizado una variable continua en dos grupos, como puntaje (alto - bajo), ingresos medidos según línea de pobreza (pobre - no pobre), resultado de un examen (aprobado - no aprobado), posición política (izquierda - derecha). Esta situación es especialmente interesante en la medición de rasgos latentes a los que se considera continuos, pero que se miden de manera dicotómica. Por ejemplo, la actitud hacia la política, puede ir desde el desinterés completo hasta la participación activa, pudiendo identificarse graduaciones entre esos extremos. Si se usa la afiliación a un partido como indicador de participación, se toma una medida dicotómica (está afiliado - no está afiliado); esta dicotomización se considera artificial, porque se supone que es un punto de corte que define dos categorías en un continuo. La distinción entre estudiantes que *promovieron* y que *no promovieron* es una dicotomizacion sobre una variable originalmente continua: el promedio de las notas. Clasificar a los países en *desarrollados* y *en vías de desarrollo*, implica cortar en dos (dicotomizar) un conjunto de indicadores de desarrollo, que son continuos (PIB per cápita, educación, etc.). Lo cual es diferente de distinguir países *con arsenal nuclear* y *sin arsenal nuclear*, porque aquí no hay graduación entre las categorías, esta última es una dicotomía real.
 
 Cuando se trata de dicotomías reales, el coeficiente $\varphi$ que ya se mencionó, es adecuado. Por el contrario, en los análisis de la intensidad de la asociación entre dos variables que han sido dicotomizadas de manera artificial a partir de una variable que se considera continua, se usa una estimación del coeficiente de Pearson que habría resultado si las variables no hubieran sido dicotomizadas y hubiese entre ellas una
 relación lineal. El coeficiente para este caso se denomina **coeficiente de correlación tetracórica**, su cálculo requiere procedimientos matemáticos complejos, por lo que hay que usar programas informáticos. También hay fórmulas aproximadas, como la siguiente
@@ -1017,7 +1017,7 @@ kableExtra::kable_styling(
 A menudo resulta de interés observar grados de asociación entre más de dos variables, para ello, una disposición adecuada es la matriz de correlaciones. Se trata de una organización de las variables que se correlacionan, en filas y columnas; las variables se repiten en la primera fila y la primera columna, por lo que la matriz de correlaciones es cuadrada. La diagonal de la matriz tiene unos (1s), que indican la correlación perfecta de cada variable consigo misma. Las celdas que se encuentran por encima y por debajo de la diagonal muestran los coeficientes de correlación entre cada par de variables. Porque esos valores son idénticos, la matriz se llama simétrica.  
 La matriz permite advertir patrones de asociación entre variables, es decir cuáles tienden a variar de manera más semejante. 
 
-Ejemplo (datos reales): el cuestionaro de Latinobarómetro (2017) pregunta por la confianza que se tiene en diferentes instituciones, con los siguientes ítems:  
+Ejemplo (datos reales): el cuestionario de Latinobarómetro (2017) pregunta por la confianza que se tiene en diferentes instituciones, con los siguientes ítems:  
 
 Para cada uno de los grupos, instituciones o personas de la lista ¿cuánta confianza tiene usted en ellas: mucha (1), algo (2), poca (3), ninguna (4) confianza en...?
 
@@ -1351,7 +1351,7 @@ Los modelos que relacionan variables son diferentes según:
 
 - la cantidad de variables involucradas
 
-La primera puede provenir de una teoría, o de la observación del diagrama de dispersión. Es decir pueder haberse propuesto el modelo inicialmente a partir de deducciones teóricas, o bien puede buscarse a regularidad en los datos, de manera empírica.  
+La primera puede provenir de una teoría, o de la observación del diagrama de dispersión. Es decir puede haberse propuesto el modelo inicialmente a partir de deducciones teóricas, o bien puede buscarse a regularidad en los datos, de manera empírica.  
 La segunda depende de las hipótesis; de cuántas y cuáles son las variables que participan en la explicación del fenómeno o proceso bajo análisis (que queda resumido en la variable consecuente).
 
 Aquí nos ocuparemos por solo una de las formas posibles: el modelo lineal y solo del caso en que hay una sola variable explicativa (antecedente).
@@ -1545,7 +1545,7 @@ En la misma dirección, Steph @Locke2018 generó una matriz de datos, llamada "D
 
 ### Distancia $\chi^{2}$
 
-En el paquete base de R existe una función que realiza operaciones relacionadas con el puntaje $\chi^{2}$; el comando es chi.test y se aplica sobre una tabla de contingencia. Estas operaciones contituyen lo que se denomina "prueba $\chi^{2}$", sobre la que trabajaremos más adelante. Por ahora, solo se usará una parte de los resultados de esta prueba. 
+En el paquete base de R existe una función que realiza operaciones relacionadas con el puntaje $\chi^{2}$; el comando es chi.test y se aplica sobre una tabla de contingencia. Estas operaciones constituyen lo que se denomina "prueba $\chi^{2}$", sobre la que trabajaremos más adelante. Por ahora, solo se usará una parte de los resultados de esta prueba. 
 
 La aplicación de la prueba a una tabla de contingencia da como resultado un objeto de clase "htest", de ello, nos van a interesar sus componentes. Para construir la tabla que cruza los tipos de violencia con el tamaño de las ciudades, primero debemos leer la base (datos ficticios), denominamos "violencia" a esa base: 
 ```{r, echo=TRUE}
@@ -1762,7 +1762,7 @@ cor(x = compara.grupos$puntaje, compara.grupos$grupo.cod)
 
 ### Modelo lineal
 
-El ajuste de una variable como función (lineal en el caso que nos interesa) de otra (u otras) constituye un objeto en R. Lo denominaremos "modelo.1". El comando para construir ese objeto es `lm` (modelo lineal) y usaremos como argumento la variable consecuente (*y*, la dependiente, lavariable a explicar) relacionada por medio del signo `~` (alt + 126 en windows) con la variable antecedente (*x*, la independiente o factor explicativo). El orden entre estas dos variables es determinante para el modelo, por lo que debe cuidarse, si *x* es antecedente e *y* consecuente y la relación se plantea
+El ajuste de una variable como función (lineal en el caso que nos interesa) de otra (u otras) constituye un objeto en R. Lo denominaremos "modelo.1". El comando para construir ese objeto es `lm` (modelo lineal) y usaremos como argumento la variable consecuente (*y*, la dependiente, la variable a explicar) relacionada por medio del signo `~` (alt + 126 en windows) con la variable antecedente (*x*, la independiente o factor explicativo). El orden entre estas dos variables es determinante para el modelo, por lo que debe cuidarse, si *x* es antecedente e *y* consecuente y la relación se plantea
 
 $$X \rightarrow Y$$
 
@@ -1794,7 +1794,7 @@ Estos son:
 
 - `puntaje.escala`: el nombre de la variable antecedente, es la pendiente de la recta.
 
-Cada uno de estos valores puede accederse separamente, así:
+Cada uno de estos valores puede accederse separadamente, así:
 
 ```{r, echo=TRUE}
 modelo.1$coefficients[1]
@@ -1935,7 +1935,7 @@ ggplot(datasaurus_dozen) + # haremos un plot con los datos
 ```
 
 Aquí se mapeó el nombre de cada subconjunto al color de los puntos de los diagramas de dispersión y se agregó la función lineal que mejor los ajusta.
-Como con el cuarteto de Anscombe, los gráfcos aportan una visión muy diferente de los conjuntos de datos, comparada con la que se tenía a partir de la observación solo de sus medidas descriptivas.
+Como con el cuarteto de Anscombe, los gráficos aportan una visión muy diferente de los conjuntos de datos, comparada con la que se tenía a partir de la observación solo de sus medidas descriptivas.
 
 [^rel_violencia]: Según la clasificación sugerida por el Informe Mundial sobre la Violencia y la Salud, Organización Panamericana de la Salud, 2003.
 

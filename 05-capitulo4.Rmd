@@ -43,7 +43,7 @@ puede hacerse es analizar la importancia relativa de los diferentes
 factores explicativos; saber en qué grado aporta cada uno a las
 diferencias que se observan.
 
-Ilustremos esto con otro ejemplo: el resultado escolar. No hay dudas que cada estudiante tiene una trayectoria única, que depende de su historia, de su contexto familiar, etc. Supongamos que analizamos el resultado escolar obtenido en primer grado y observamos que algunos cursos tienen docentes tradicionales, que usan los mismos métodos estandarizados de enseñanza desde hace muchos años. Otros cursos tienen docentes que invitan a participar, que innovan en los métodos de enseñanza. Luego comparamos el rendimiento de estudiantes de los dos cursos y vemos que los del primer grupo aprenden más lentamente que los del segundo y que además, los primeros dicen que se aburren yendo a la escuela y los otros no. Esto no sucede con todos los niños y niñas: habrá en el primer grupo quienes aprenden más rápido y que se divierten, así como en el segundo grupo quienes tarden más en aprender y quienes se aburran. Pero, en general, como tendencia, podríamos hallar mejores resultados en el grupo que tiene docentes innovadores. Esto nos lleva a indicar que hay evidencia para creer que, quienes en  su actividad docente incorporan innovaciones, obtienen mejores resultados que quienes adhieren a prácticas tradicionales. Pero esto no es absoluto, ni abarca al conjunto completo de estudiantes, sino a la mayoría. De eso se trata la búsqueda de factores explicativos: en este ejemplo diremos que, de los múltiples factores que explican el difente desempeño estudiantil, el tipo de docente es parte de la explicación.  
+Ilustremos esto con otro ejemplo: el resultado escolar. No hay dudas que cada estudiante tiene una trayectoria única, que depende de su historia, de su contexto familiar, etc. Supongamos que analizamos el resultado escolar obtenido en primer grado y observamos que algunos cursos tienen docentes tradicionales, que usan los mismos métodos estandarizados de enseñanza desde hace muchos años. Otros cursos tienen docentes que invitan a participar, que innovan en los métodos de enseñanza. Luego comparamos el rendimiento de estudiantes de los dos cursos y vemos que los del primer grupo aprenden más lentamente que los del segundo y que además, los primeros dicen que se aburren yendo a la escuela y los otros no. Esto no sucede con todos los niños y niñas: habrá en el primer grupo quienes aprenden más rápido y que se divierten, así como en el segundo grupo quienes tarden más en aprender y quienes se aburran. Pero, en general, como tendencia, podríamos hallar mejores resultados en el grupo que tiene docentes innovadores. Esto nos lleva a indicar que hay evidencia para creer que, quienes en  su actividad docente incorporan innovaciones, obtienen mejores resultados que quienes adhieren a prácticas tradicionales. Pero esto no es absoluto, ni abarca al conjunto completo de estudiantes, sino a la mayoría. De eso se trata la búsqueda de factores explicativos: en este ejemplo diremos que, de los múltiples factores que explican el diferente desempeño estudiantil, el tipo de docente es parte de la explicación.  
 
 Las elecciones de autoridades nacionales o provinciales, son resultados que provienen de procesos muy complejos. Existen algunos elementos que ayudan a explicar un resultado: características personales de quienes se postulan, situación económica al momento de las elecciones, clima social, etc. Pero el resultado depende también de otros factores que no se conocen, por lo que la anticipación del resultado no puede lograrse de manera certera. Lo que las personas encuestadas hayan dicho que votarían aporta a anticipar el resultado, pero la predicción es aproximada.    
 
@@ -519,7 +519,7 @@ Estos valores son los que se usan para calcular el riesgo relativo, el cociente 
 
 ## La intensidad
 
-Adeemás de la simetría o asimetría y de la dirección (si se la puede indicar), hay otra característica que hace falta medir de las relaciones entre variables, que es su **intensidad**. Esta medida de la relación es lo que está implícito cuando se dice: "X tiene mucha influencia en Y", la idea de mucha o poca influencia es la de intensidad de la relación. Cuando hay muchos factores explicativos
+Además de la simetría o asimetría y de la dirección (si se la puede indicar), hay otra característica que hace falta medir de las relaciones entre variables, que es su **intensidad**. Esta medida de la relación es lo que está implícito cuando se dice: "X tiene mucha influencia en Y", la idea de mucha o poca influencia es la de intensidad de la relación. Cuando hay muchos factores explicativos
 para un fenómeno, es importante saber cuáles factores inciden más o menos en el fenómeno y a eso se responde indicando la intensidad de
 cada relación. Cuando se dice que "las horas de estudio inciden en el resultado de un examen, pero la forma de estudiar influye más", se está indicando que la relación entre la forma de estudiar y el resultado es más intensa que entre la cantidad de horas y el resultado.
 
@@ -624,7 +624,7 @@ El 25.3% ha pensado en emigrar (sin importar su opinión sobre la evolución de 
 
 El 25.7% cree que su país está mejorando (sin tener en cuenta su proyecto migratorio).
 
-El análisis que se haga de la tabla depende del modo en que se formule la hipótesis sobre la relación. Si se plantea a la "opinón sobre la evolución del país" como uno de los posibles elementos que influiría a la decisión de emigrar, entonces, la opinión es antecedente de la decisión de migrar. Con esta formulación, el interés estaría en comparar la decisión de emigrar entre quienes tienen diferente opinión sobre la evolución del país. Para ello, generamos frecuencias relativas en dirección de la opinión (variable antecedente) y, por comodidad, expresamos esas frecuencias relativas como porcentajes:
+El análisis que se haga de la tabla depende del modo en que se formule la hipótesis sobre la relación. Si se plantea a la "opinión sobre la evolución del país" como uno de los posibles elementos que influiría a la decisión de emigrar, entonces, la opinión es antecedente de la decisión de migrar. Con esta formulación, el interés estaría en comparar la decisión de emigrar entre quienes tienen diferente opinión sobre la evolución del país. Para ello, generamos frecuencias relativas en dirección de la opinión (variable antecedente) y, por comodidad, expresamos esas frecuencias relativas como porcentajes:
 
 ```{r}
 tabla13 <- 100 * round(addmargins(prop.table(tabla10, 1), 2), 3)
@@ -640,7 +640,7 @@ kableExtra::kable_styling(
 )
 ```
 
-Ahora la lectura es por las filas, es decir, por las categorías de la opinión. Entre quienes opinan que su pais está progresando, hay un 22.3% que ha pensado en emigrar, mientras que entre quienes creen que está en retroceso, el porcentaje sube al 30%. 
+Ahora la lectura es por las filas, es decir, por las categorías de la opinión. Entre quienes opinan que su país está progresando, hay un 22.3% que ha pensado en emigrar, mientras que entre quienes creen que está en retroceso, el porcentaje sube al 30%. 
 
 La ventaja de usar porcentajes (o frecuencias relativas) es que las comparaciones se hacen sobre los mismos totales, es "como si" hubiese 100 personas que opinan que el país está mejorando, 100 que está estancado y 100 que está empeorando.
 
@@ -752,7 +752,7 @@ El cálculo del coeficiente da ahora:
 
 $$Q = \frac{1512*3545-1519*3528}{1512*545+1519*3528} = 0.00$$
 
-Este valor indica que no hay relación entre las variables, es decir que, según estos datos, la opinión no haría diferencia alguna sobre la intención de emigrar. En una situación así se considera a las dos variabes como **estadísticamente independientes**, nuevamente, es un caso que no se observa con datos reales.  
+Este valor indica que no hay relación entre las variables, es decir que, según estos datos, la opinión no haría diferencia alguna sobre la intención de emigrar. En una situación así se considera a las dos variables como **estadísticamente independientes**, nuevamente, es un caso que no se observa con datos reales.  
 
 
 ||
@@ -799,7 +799,7 @@ Y, indicamos que Y sucede tanto si X está presente como si no lo está.
 La independencia de dos variables es equivalente a que no haya
 asociación entre ellas.
 
-Consideremos ahora la distribuión de la actividad económica por sexos según datos de la EPH. 
+Consideremos ahora la distribución de la actividad económica por sexos según datos de la EPH. 
 
 ```{r echo=FALSE, warning=FALSE}
 eph.3.18 <- read.csv("bases/archivostxt/usu_individual_T318.txt", sep = ";")
@@ -865,7 +865,7 @@ correspondiente a la tabla anterior"
 )
 ```
 
-Observemos algunos detalles de esta tabla. En primer lugar, las frecuencias marginales no han cambiado (salvo por elgún efecto de redondeo), los totales son los mismos y solo se trata de un reordenamiento de las frecuencias conjuntas bajo la hipótesis de independencia de las dos variables.
+Observemos algunos detalles de esta tabla. En primer lugar, las frecuencias marginales no han cambiado (salvo por algún efecto de redondeo), los totales son los mismos y solo se trata de un reordenamiento de las frecuencias conjuntas bajo la hipótesis de independencia de las dos variables.
 
 Tratemos ahora de formalizar las operaciones que condujeron a esta segunda tabla. Los valores 48.3%, 8.07% y 47.8% provienen de las proporciones de casos en cada una de las categorías de la variable condición de actividad, y se calcularon como $$\frac{23398}{48435}$$,  $$\frac{1870}{48435}$$ y $$\frac{23167}{48435}$$ respectivamente. Luego esas proporciones se multiplicaron por los totales de casos de cada categoría de la variable sexo. De esa operación obtuvimos 11077 como $$22929*0.483$$ (salvo diferencias por redondeo), que daría lo mismo expresado como $$22929*\frac{23398}{48435}$$. Y del mismo modo el resto de las celdas.
 
@@ -983,7 +983,7 @@ La elaboración de las tablas en R se pide con el comando `table` aplicado sobre
 table(eph.3.18$CH04, eph.3.18$ESTADO)
 ```
 
-Así presentada, la tabla no es muy clara; solo interesan las categorías válidas de ESTADO, por lo que harán falta algunos ajustes. Para eliminar el 0 y el 4 de ESTADO, tomamos un subconjunto de la base que cumpla con que la variable ESTADO valga 1, 2 ó 3, el simbolo de "o" es "|". Llamamos *eph.3.18.validos.estado* a esa nueva base:
+Así presentada, la tabla no es muy clara; solo interesan las categorías válidas de ESTADO, por lo que harán falta algunos ajustes. Para eliminar el 0 y el 4 de ESTADO, tomamos un subconjunto de la base que cumpla con que la variable ESTADO valga 1, 2 ó 3, el símbolo de "o" es "|". Llamamos *eph.3.18.validos.estado* a esa nueva base:
 
 ```{r echo=TRUE, warning=FALSE}
 eph.3.18.validos.estado <- subset(eph.3.18, eph.3.18$ESTADO == 1 |

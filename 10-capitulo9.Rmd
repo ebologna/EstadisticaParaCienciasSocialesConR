@@ -19,7 +19,7 @@ probabilístico. En consecuencia, las medidas que se calculen a partir de esos d
 ## Variabilidad muestral
 El concepto que desarrollamos en este capítulo es el de *variabilidad muestral*. La idea central es que cuando se extraen muestras aleatorias de una población, los resultados que se obtienen en esas muestras, son aleatorios. Dos ejemplos de ello:  
 - Según el @anuariounc2014, el conjunto completo de estudiantes de Psicología en 2014 tenía una edad promedio de 26.8 años. Si ese año se hubiese extraído una muestra aleatoria de tamaño 20, la edad promedio podría haber sido un número muy diferente de 26.8 años. Una posible muestra es la que tiene a  20 estudiantes muy jóvenes, por lo que la edad promedio de esa muestra va a ser menos de 26.8. Otra muestra podría tener estudiantes de más edad, por lo que promedio de esa muestra sería superior al de la población completa.  
-- En las elecciones a gobernador de 2019 en la provincia de Córdoba, el partido que ganó, obtuvo 57% de los votos. Si se selecciona aleatoriamente una muestra de 50 personas que hayan votado ese año, el porcentaje de quienes optaron por ese partido pordría ser diferente a 57%. Alguna muestra podría dar cero, es decir no contener a ningún votante de ese partido; y otra dar 100%, que todos lo hayan votado.  
+- En las elecciones a gobernador de 2019 en la provincia de Córdoba, el partido que ganó, obtuvo 57% de los votos. Si se selecciona aleatoriamente una muestra de 50 personas que hayan votado ese año, el porcentaje de quienes optaron por ese partido podría ser diferente a 57%. Alguna muestra podría dar cero, es decir no contener a ningún votante de ese partido; y otra dar 100%, que todos lo hayan votado.  
 
 Recordemos que los casos que "cayeron" en la muestra provienen de un proceso de selección aleatoria, no podemos asegurar que la variable que estamos estudiando se asemeje en la muestra al valor que tiene en la población. Por eso, el resultado que obtengamos en la muestra depende del azar: se trata de una variable aleatoria. Tanto la media muestral, en el ejemplo de las edades de estudiantes, como la proporción muestral, en el ejemplo de las elecciones, son medidas calculadas sobre los valores obtenidos en muestras aleatorias, son variables aleatorias, sus valores dependen de cuáles sean los casos que constituyen la muestra y esto depende del azar, que es lo que hemos pedido como requisito al procedimiento de muestreo.
 
@@ -71,7 +71,7 @@ aux_table <- tibble::tribble(
   "Proporción", "$P$", "$\\widehat{p}$",
   "Varianza", "$\\sigma^{2}$", "$s^2$",
   "", "(sigma cuadrado)", "",
-  "Desviación Standard", "$\\sigma$", "$s$",
+  "Desviación Estándar", "$\\sigma$", "$s$",
   "", "(sigma)", "",
   "Diferencia de medias", "$\\mu_{1} - \\mu_{2}$", "${\\overline{x}}_{1} - {\\overline{x}}_{2}$",
   "Diferencia de proporciones", "$P_{1} - P_{2}$", "${\\widehat{p}}_{1} - {\\widehat{p}}_{2}$",
@@ -173,7 +173,7 @@ en la muestra.
 
 ## Características de los estimadores
 
-Se describen tres propiedades de los estimadores, que se requieren para poder hacer inerencias de buena calidad: insesganilidad, consistencia y eficiencia.  
+Se describen tres propiedades de los estimadores, que se requieren para poder hacer inferencias de buena calidad: insesgabilidad, consistencia y eficiencia.  
 
 ### Insesgabilidad
 
@@ -464,7 +464,7 @@ de una variable, por lo que esta varianza mide la dispersión entre los
 valores de las diferentes medias muestrales. El hecho que disminuya
 cuando aumenta el tamaño de la muestra significa que para muestras más
 grandes, las medias muestrales tendrán menos dispersión, es decir que
-menos probables los valores muy elejados. Esta propiedad se denomina
+menos probables los valores muy alejados. Esta propiedad se denomina
 consistencia, entonces este resultado puede expresarse indicando que la
 media muestral es un estimador consistente de la media poblacional,
 porque su varianza se reduce a medida que aumenta el tamaño de la
@@ -1161,7 +1161,7 @@ que, a medida que el tamaño de las muestras crece, la distribución de
 estos estimadores va siendo más cercana a la curva del modelo normal.
 Sin embargo, cuando las muestras son pequeñas, se debe usar un modelo
 diferente. William Gosset (@student1908a, @student1908b) desarrolló la distribución conocida
-como t de Student, que se adecua a describir la distribución de las
+como t de Student, que se adecúa a describir la distribución de las
 medias muestrales cuando éstas provienen de muestras pequeñas. Expresado
 formalmente, si las muestras son pequeñas y la variable tiene distribución normal en la población, entonces:
 
@@ -1245,7 +1245,7 @@ Para comparar muestras que provienen de diferentes poblaciones (participantes y 
 Para comparar las medias de dos poblaciones, el parámetro es $\mu_{1} - \mu_{2}$ y su estimador ${\overline{x}}_{1} - {\overline{x}}_{2}$. Cuando se compara la proporción de casos en una categoría de una variable categórica, el parámetro es la diferencia de
 proporciones poblacionales: $P_{1} - P_{2}$ y su estimador, la
 diferencia de proporciones muestrales: ${\widehat{p}}_{1} - {\widehat{p}}_{2}$. Cuando se cumple que las muestras son grandes, ambos estimadores (diferencia de medias y diferencia de proporciones) tienen distribución normal, o bien, en el caso de la media, distribución t, si se trata de muestras pequeñas y puede suponerse la distribución normal en la población.  
-La forma general de la relacióon entre estimadores y parámetros es, para la diferencia de medias: $$\frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)}{s_{(\overline{x}_1 - \overline{x}_2})}$$
+La forma general de la relación entre estimadores y parámetros es, para la diferencia de medias: $$\frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)}{s_{(\overline{x}_1 - \overline{x}_2})}$$
 
 Donde $s_{(\overline{x}_1 - \overline{x}_2)}$ tomará diferentes valores según como sean las varianzas poblacionales. En los próximos capítulos se trata este tema.  
 

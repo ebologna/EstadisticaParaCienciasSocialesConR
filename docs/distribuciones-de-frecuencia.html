@@ -1365,7 +1365,7 @@ Así, además de indicar cuántos casos (o qué porcentaje de ellos) tiene deter
 </tr>
 </tbody>
 </table>
-<p>Los intervalos son de la misma amplitud, 9.2 años, que es la distancia que hay entre los límites de cada uno de ellos. El inconveniente es que el primero de los intervalos tiene más del 70% de las observaciones, con lo que se pierde detalle de la distribuciión.</p>
+<p>Los intervalos son de la misma amplitud, 9.2 años, que es la distancia que hay entre los límites de cada uno de ellos. El inconveniente es que el primero de los intervalos tiene más del 70% de las observaciones, con lo que se pierde detalle de la distribución.</p>
 </div>
 <div id="intervalos-de-amplitud-proporcional" class="section level4 hasAnchor" number="2.2.3.2">
 <h4><span class="header-section-number">2.2.3.2</span> Intervalos de amplitud proporcional<a href="distribuciones-de-frecuencia.html#intervalos-de-amplitud-proporcional" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -1488,7 +1488,7 @@ Figura 2.7: Polígono de frecuencias de las edades sobre el histograma.
 </div>
 <p>Al polígono le fueron agregados dos intervalos, uno anterior al primero y uno posterior al último, cuyas frecuencias son cero, con el objetivo de “cerrar” el polígono sobre el eje horizontal.
 El área que queda bajo este polígono es igual a la que encierran los rectángulos del histograma, y valdrá <span class="math inline">\(n\)</span> si se grafican frecuencias absolutas ó <span class="math inline">\(1\)</span> si son las relativas.<br />
-Cuando se muestra solo el polígono (gráfico <a href="distribuciones-de-frecuencia.html#fig:solopoli">2.8</a>), se tiene una representacón simplificada de la distribución, que sirve para apreciar aspectos que se verán más adelante: forma, dispersión, simetría, etc. Además es preferible presentar en el eje vertical, frecuencias relativas antes que absolutas, para facilitar las comparaciones.</p>
+Cuando se muestra solo el polígono (gráfico <a href="distribuciones-de-frecuencia.html#fig:solopoli">2.8</a>), se tiene una representación simplificada de la distribución, que sirve para apreciar aspectos que se verán más adelante: forma, dispersión, simetría, etc. Además es preferible presentar en el eje vertical, frecuencias relativas antes que absolutas, para facilitar las comparaciones.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:solopoli"></span>
 <img src="EstadisticaParaCienciasSocialesConR_files/figure-html/solopoli-1.svg" alt="Polígono de frecuencias de las edades." width="288" />
 <p class="caption">
@@ -1510,7 +1510,7 @@ Si la variable es continua, se trata de la <strong>ojiva de Galton</strong>, las
 Figura 2.10: Ojiva de los pesos al nacer.
 </p>
 </div>
-<p>Debido a que en la práctica las variables nunca son continuas, siempre habra “escalones” cuyo tamaño es el de la mínima medición posible de la variable (la apreciación del instrumento con que se mide).<br />
+<p>Debido a que en la práctica las variables nunca son continuas, siempre habrá “escalones” cuyo tamaño es el de la mínima medición posible de la variable (la apreciación del instrumento con que se mide).<br />
 La ojiva de Galton tiene otra virtud además de la claridad visual, ya que permite interpolar valores no observados, o que no aparecen en la tabla. Así, con el gráfico podemos responder a la pregunta ¿Qué proporción nación con 2512 g o menos? La respuesta consiste en buscar el valor 2512 gramos en el eje x, e identificar la frecuencia acumulada que le corresponde, como se muestra en <a href="distribuciones-de-frecuencia.html#fig:estimaacumulada">2.11</a>.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:estimaacumulada"></span>
 <img src="EstadisticaParaCienciasSocialesConR_files/figure-html/estimaacumulada-1.svg" alt="Estimación de la frecuencia acumulada para un valor del peso al nacer." width="288" />
@@ -1562,7 +1562,7 @@ Figura 2.12: Identificación de los valores de la variable para determinadas fre
 <div class="sourceCode" id="cb166"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb166-1"><a href="distribuciones-de-frecuencia.html#cb166-1" tabindex="-1"></a>base.ejemplo <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">&quot;bases/archivostxt/base2019.txt&quot;</span>,</span>
 <span id="cb166-2"><a href="distribuciones-de-frecuencia.html#cb166-2" tabindex="-1"></a>  <span class="at">header =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot; &quot;</span>, <span class="at">na.strings =</span> <span class="st">&quot;999&quot;</span></span>
 <span id="cb166-3"><a href="distribuciones-de-frecuencia.html#cb166-3" tabindex="-1"></a>)</span></code></pre></div>
-<p>Y repetimos las operaciones anteriores, de dar nombre a las variables, y de tranformar en factor y etiquetar las variables que corresponda (para esto alcanza con copiar y pegar las instrucciones del capítulo anterior):</p>
+<p>Y repetimos las operaciones anteriores, de dar nombre a las variables, y de transformar en factor y etiquetar las variables que corresponda (para esto alcanza con copiar y pegar las instrucciones del capítulo anterior):</p>
 <div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="distribuciones-de-frecuencia.html#cb167-1" tabindex="-1"></a><span class="co"># nombres de columnas:</span></span>
 <span id="cb167-2"><a href="distribuciones-de-frecuencia.html#cb167-2" tabindex="-1"></a><span class="fu">names</span>(base.ejemplo) <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb167-3"><a href="distribuciones-de-frecuencia.html#cb167-3" tabindex="-1"></a>  <span class="st">&quot;caso&quot;</span>, <span class="st">&quot;grupo&quot;</span>, <span class="st">&quot;n.cuest&quot;</span>, <span class="st">&quot;nombre&quot;</span>, <span class="st">&quot;sexo&quot;</span>, <span class="st">&quot;genero&quot;</span>,</span>
@@ -1789,7 +1789,7 @@ Para ver los comandos, vamos a generar nuevas variables en la base, que se llama
 </li>
 <li>Los ajustes de posición</li>
 </ul>
-<p>Cada figura geométrica (<code>geom</code>) tiene asociada una transformación estadística por defecto, por lo que no es necesario especificarla, salvo que se quiera modificar. Por ejemplo si los datos para un gráfico provienen de una matriz de datos (<code>data.frame</code>), la tranformación consiste en contar las ocurrencias de cada valor, ese es el <code>stat</code> por defecto. Pero si se quiere graficar desde una tabla de distribución de frecuencias, entonces en lugar de contar las veces que aparece cada categoría, hay que considerar las frecuencias. En este último caso, será necesario especificar una transformación diferente.</p>
+<p>Cada figura geométrica (<code>geom</code>) tiene asociada una transformación estadística por defecto, por lo que no es necesario especificarla, salvo que se quiera modificar. Por ejemplo si los datos para un gráfico provienen de una matriz de datos (<code>data.frame</code>), la transformación consiste en contar las ocurrencias de cada valor, ese es el <code>stat</code> por defecto. Pero si se quiere graficar desde una tabla de distribución de frecuencias, entonces en lugar de contar las veces que aparece cada categoría, hay que considerar las frecuencias. En este último caso, será necesario especificar una transformación diferente.</p>
 <div id="creación-de-un-gráfico" class="section level4 hasAnchor" number="2.4.3.1">
 <h4><span class="header-section-number">2.4.3.1</span> Creación de un gráfico<a href="#creaci%C3%B3n-de-un-gr%C3%A1fico" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>La primera instrucción para crear un gráfico es <code>ggplot()</code>. Esta instrucción va a tener como argumento, la matriz de donde provienen las variables a graficar. Puede incluirse el mapeo estético también, pero en este ejemplo lo vamos a agregar en las capas que indican el tipo de gráfico.<br />

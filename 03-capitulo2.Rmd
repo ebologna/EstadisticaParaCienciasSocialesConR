@@ -300,7 +300,7 @@ kableExtra::kable_styling(
 )
 ```
 
-Los intervalos son de la misma amplitud, 9.2 años, que es la distancia que hay entre los límites de cada uno de ellos. El inconveniente es que el primero de los intervalos tiene más del 70% de las observaciones, con lo que se pierde detalle de la distribuciión.
+Los intervalos son de la misma amplitud, 9.2 años, que es la distancia que hay entre los límites de cada uno de ellos. El inconveniente es que el primero de los intervalos tiene más del 70% de las observaciones, con lo que se pierde detalle de la distribución.
 
 #### Intervalos de amplitud proporcional
 
@@ -458,7 +458,7 @@ ggplot(eph.3.18) +
 
 Al polígono le fueron agregados dos intervalos, uno anterior al primero y uno posterior al último, cuyas frecuencias son cero, con el objetivo de "cerrar" el polígono sobre el eje horizontal.
 El área que queda bajo este polígono es igual a la que encierran los rectángulos del histograma, y valdrá $n$ si se grafican frecuencias absolutas ó $1$ si son las relativas.  
-Cuando se muestra solo el polígono (gráfico \@ref(fig:solopoli)), se tiene una representacón simplificada de la distribución, que sirve para apreciar aspectos que se verán más adelante: forma, dispersión, simetría, etc. Además es preferible presentar en el eje vertical, frecuencias relativas antes que absolutas, para facilitar las comparaciones.
+Cuando se muestra solo el polígono (gráfico \@ref(fig:solopoli)), se tiene una representación simplificada de la distribución, que sirve para apreciar aspectos que se verán más adelante: forma, dispersión, simetría, etc. Además es preferible presentar en el eje vertical, frecuencias relativas antes que absolutas, para facilitar las comparaciones.
 
 ```{r solopoli, fig.cap="Polígono de frecuencias de las edades.", fig.asp = 0.7, fig.width = 3, fig.align = 'center'}
 ggplot(eph.3.18) +
@@ -493,7 +493,7 @@ ggplot(bayley) +
   theme_tufte(base_size = 9)
 ```
 
-Debido a que en la práctica las variables nunca son continuas, siempre habra "escalones" cuyo tamaño es el de la mínima medición posible de la variable (la apreciación del instrumento con que se mide).  
+Debido a que en la práctica las variables nunca son continuas, siempre habrá "escalones" cuyo tamaño es el de la mínima medición posible de la variable (la apreciación del instrumento con que se mide).  
 La ojiva de Galton tiene otra virtud además de la claridad visual, ya que permite interpolar valores no observados, o que no aparecen en la tabla. Así, con el gráfico podemos responder a la pregunta ¿Qué proporción nación con `r round(quantile(bayley$peso.nac, .17), 0)` g o menos? La respuesta consiste en buscar el valor `r round(quantile(bayley$peso.nac, .17), 0)` gramos en el eje x, e identificar la frecuencia acumulada que le corresponde, como se muestra en \@ref(fig:estimaacumulada). 
 
 ```{r estimaacumulada, fig.cap="Estimación de la frecuencia acumulada para un valor del peso al nacer.", fig.asp = 0.7, fig.width = 3, fig.align = 'center'}
@@ -610,7 +610,7 @@ base.ejemplo <- read.table("bases/archivostxt/base2019.txt",
 )
 ```
 
-Y repetimos las operaciones anteriores, de dar nombre a las variables, y de tranformar en factor y etiquetar las variables que corresponda (para esto alcanza con copiar y pegar las instrucciones del capítulo anterior):  
+Y repetimos las operaciones anteriores, de dar nombre a las variables, y de transformar en factor y etiquetar las variables que corresponda (para esto alcanza con copiar y pegar las instrucciones del capítulo anterior):  
 ```{r warning=FALSE, echo=TRUE}
 # nombres de columnas:
 names(base.ejemplo) <- c(
@@ -802,7 +802,7 @@ La construcción de los gráficos en `ggplot` se hace por medio de capas que se 
 -  La transformación estadística (`stat`) que opera sobre los datos originales para sintetizarlos de modo que se los pueda representar.  
 -  Los  ajustes de posición  
 
-Cada figura geométrica (`geom`) tiene asociada una transformación estadística por defecto, por lo que no es necesario especificarla, salvo que se quiera modificar. Por ejemplo si los datos para un gráfico provienen de una matriz de datos (`data.frame`), la tranformación consiste en contar las ocurrencias de cada valor, ese es el `stat` por defecto. Pero si se quiere graficar desde una tabla de distribución de frecuencias, entonces en lugar de contar las veces que aparece cada categoría, hay que considerar las frecuencias. En este último caso, será necesario especificar una transformación diferente.    
+Cada figura geométrica (`geom`) tiene asociada una transformación estadística por defecto, por lo que no es necesario especificarla, salvo que se quiera modificar. Por ejemplo si los datos para un gráfico provienen de una matriz de datos (`data.frame`), la transformación consiste en contar las ocurrencias de cada valor, ese es el `stat` por defecto. Pero si se quiere graficar desde una tabla de distribución de frecuencias, entonces en lugar de contar las veces que aparece cada categoría, hay que considerar las frecuencias. En este último caso, será necesario especificar una transformación diferente.    
 
 #### Creación de un gráfico  
 
