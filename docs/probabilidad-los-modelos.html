@@ -529,7 +529,7 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="probabilidad-los-modelos" class="section level1 hasAnchor" number="8">
 <h1><span class="header-section-number">Capítulo 8</span> Probabilidad: los modelos<a href="probabilidad-los-modelos.html#probabilidad-los-modelos" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Un modelo es una representación simplificada de un proceso observable, es una formalización de algunos aspectos de la realidad. La expresión “todos los modelos son erroneos, pero algunos son útiles” atribuida a <span class="citation">Box and Draper (<a href="#ref-Box1987">1987</a>)</span>, sintetiza la idea de simplificación, de recorte, de selección deliberada de algunos componentes para describir, explicar y predecir. Por definición, un modelo es teórico y propone articulación entre conceptos, con nexos deductivos, inductivos, de analogía, etc. No es
+<p>Un modelo es una representación simplificada de un proceso observable, es una formalización de algunos aspectos de la realidad. La expresión “todos los modelos son erróneos, pero algunos son útiles” atribuida a <span class="citation">Box and Draper (<a href="#ref-Box1987">1987</a>)</span>, sintetiza la idea de simplificación, de recorte, de selección deliberada de algunos componentes para describir, explicar y predecir. Por definición, un modelo es teórico y propone articulación entre conceptos, con nexos deductivos, inductivos, de analogía, etc. No es
 arbitrario, ya que deben tenerse razones para suponer que el modelo se
 sostiene: no es espera que esté en contradicción con lo que se observa, pero en todos los casos es una aproximación a lo que sucede en
 la realidad. Tratamos de modelar (o modelizar) lo que observamos a fin
@@ -834,7 +834,7 @@ En R disponemos de las rutinas para calcular probabilidades simples y acumuladas
 <p>Para pedir la probabilidad acumulada, como por ejemplo la de obtener tres caras o menos (<span class="math inline">\(P(X\leq 3)\)</span>) en cuatro lanzamientos, el comando es <code>pbinom</code>, con los mismos argumentos:</p>
 <div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="probabilidad-los-modelos.html#cb394-1" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">pbinom</span>(<span class="dv">3</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">prob =</span> <span class="fl">0.5</span>), <span class="dv">4</span>)</span></code></pre></div>
 <pre><code>## [1] 0.9375</code></pre>
-<p>Que es la suma de las probabillidades exactas desde cero hasta tres:</p>
+<p>Que es la suma de las probabilidades exactas desde cero hasta tres:</p>
 <pre><code>## [1] 0.9375</code></pre>
 <p>La respuesta al problema del examen se resuelve en dos pasos, porque para aprobar hacen falta 12 aciertos <em>o más</em>. Entonces, primero calculamos la probabilidad acumulada de 11 (<span class="math inline">\(P(X\leq 11)\)</span>), que es la probabilidad de no aprobar (obtener 11 aciertos o menos):</p>
 <div class="sourceCode" id="cb397"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb397-1"><a href="probabilidad-los-modelos.html#cb397-1" tabindex="-1"></a><span class="fu">round</span>(<span class="fu">pbinom</span>(<span class="dv">11</span>, <span class="dv">20</span>, .<span class="dv">2</span>), <span class="dv">4</span>)</span></code></pre></div>
@@ -846,7 +846,7 @@ En R disponemos de las rutinas para calcular probabilidades simples y acumuladas
 <div class="sourceCode" id="cb399"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb399-1"><a href="probabilidad-los-modelos.html#cb399-1" tabindex="-1"></a><span class="fu">dbinom</span>(<span class="dv">15</span>, <span class="dv">15</span>, .<span class="dv">7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.004747562</code></pre>
 <p>Y se expresa así: <span class="math display">\[P(X=15)=B(15,15,.7)=0.0047\]</span><br />
-Al final del capítulo veremos con más detalle cómo pedir estas probabiidades a R.</p>
+Al final del capítulo veremos con más detalle cómo pedir estas probabilidades a R.</p>
 <div id="esperanza-y-varianza" class="section level3 hasAnchor" number="8.2.1">
 <h3><span class="header-section-number">8.2.1</span> Esperanza y varianza<a href="probabilidad-los-modelos.html#esperanza-y-varianza" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En este modelo de probabilidad, la esperanza es <span class="math inline">\(n*p\)</span>, que representa
@@ -865,7 +865,7 @@ hasta el número total de repeticiones del experimento. El siguiente es
 el correspondiente a 20 repeticiones con diferentes valores de <span class="math inline">\(p\)</span>:</p>
 <p><img src="EstadisticaParaCienciasSocialesConR_files/figure-html/unnamed-chunk-360-1.svg" width="672" /></p>
 <p>Observemos la forma en que aparece representada la diferencia entre las
-varianzas de las distribuciones, la màxima ocurre con <span class="math inline">\(p=0.50\)</span>.</p>
+varianzas de las distribuciones, la máxima ocurre con <span class="math inline">\(p=0.50\)</span>.</p>
 </div>
 </div>
 <div id="distribución-normal" class="section level2 hasAnchor" number="8.3">
@@ -964,7 +964,7 @@ probabilidad acumulada: el área por debajo de <span class="math inline">\(-1\)<
 <p>La regla empírica que se mencionó antes tiene aquí su origen. Ya que si la distribución es similar a la normal (unimodal y simétrica), entonces <em>aproximadamente</em> el 68% estará a menos de una desviación estándar de la media, el 95% a menos de dos, y el 99.7% a una distancia no mayor a tres desviaciones estándar. Son los valores de <span class="math inline">\(z\)</span>, que mide distancia hasta la media, expresada en términos de desviaciones estándar.</p>
 <div id="cuantiles" class="section level3 hasAnchor" number="8.3.1">
 <h3><span class="header-section-number">8.3.1</span> Cuantiles<a href="probabilidad-los-modelos.html#cuantiles" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>De mismo modo que con las distribuciones de frecuencia, los valores de la variable que acumulan una determinada probabilidad son los cuantiles. El valor <span class="math inline">\(z=-1\)</span> es el cuantil <span class="math inline">\(0.1587\)</span> de la variable y <span class="math inline">\(z=2\)</span> es el cuantil <span class="math inline">\(0.9772\)</span>, que suelen leerse como percentiles 15.87 y 97.72 respectivmente.</p>
+<p>De mismo modo que con las distribuciones de frecuencia, los valores de la variable que acumulan una determinada probabilidad son los cuantiles. El valor <span class="math inline">\(z=-1\)</span> es el cuantil <span class="math inline">\(0.1587\)</span> de la variable y <span class="math inline">\(z=2\)</span> es el cuantil <span class="math inline">\(0.9772\)</span>, que suelen leerse como percentiles 15.87 y 97.72 respectivamente.</p>
 <p>Para determinar ahora los valores de <span class="math inline">\(z\)</span> que acumulan cierta probabilidad, se necesita la operación inversa a la que se realizó hasta aquí, porque hay que hallar cuál es el valor de la variable (<span class="math inline">\(z\)</span>) que deja por debajo una determinada probabilidad. Según la definición de percentiles, el percentil <span class="math inline">\(P_{r}\)</span> de la variable es el valor por debajo del cual la probabilidad de hallarla es <span class="math inline">\(r\%\)</span>. Gráficamente, se trataría de fijar el área (<span class="math inline">\(r\%\)</span>) y el problema es determinar cuál es el <span class="math inline">\(z\)</span> que la acumula.</p>
 <p>Usamos un software (al final vemos cómo hacerlo con R) para solicitar este valor: a partir de la probabilidad acumulada, pedimos el valor de <span class="math inline">\(z\)</span>. Por ejemplo, el percentil <span class="math inline">\(95\)</span> (<span class="math inline">\(P_{95}\)</span>) de la distribución normal es (al final veremos como pedirlo a R):</p>
 <pre><code>## [1] 1.6449</code></pre>
@@ -1055,7 +1055,7 @@ probabilidad acumulada hasta <span class="math inline">\(z=1.50\)</span>, la acu
 <p>Toda variable que puede modelarse con una distribución normal puede
 transformarse a puntaje <span class="math inline">\(z\)</span> y así hallar la probabilidad asociada a
 diferentes intervalos.</p>
-<p>Hemos realizado las operaciones de este modo hasta aquí, porque es importante tener clara la relación entre las variable concreta que se mide u observa, con la variable abstracta, <span class="math inline">\(z\)</span>. Sin embargo, es posible solicitar las probabilidades a cualquier software o calculadora de probabilidades a partir de los valores de la variable original, siempre y cuando se informe la media y la desviación estándar. Para obtener el resultado de manera directa, sin pasar por <span class="math inline">\(z\)</span>, aa probabilidad es:</p>
+<p>Hemos realizado las operaciones de este modo hasta aquí, porque es importante tener clara la relación entre las variable concreta que se mide u observa, con la variable abstracta, <span class="math inline">\(z\)</span>. Sin embargo, es posible solicitar las probabilidades a cualquier software o calculadora de probabilidades a partir de los valores de la variable original, siempre y cuando se informe la media y la desviación estándar. Para obtener el resultado de manera directa, sin pasar por <span class="math inline">\(z\)</span>, la probabilidad es:</p>
 <p><span class="math display">\[P(3500 &lt; x &lt; 4500)\]</span></p>
 <p>Que se calcula como la diferencia entre la probabilidad acumulada hasta
 4500 menos la acumulada hasta 3500.</p>
@@ -1365,9 +1365,9 @@ valor de la variable y los grados de libertad. La probabilidad que una variable 
 <p>Que dice que <span class="math display">\[P(t_{1} \leq 2)=0.8524\]</span></p>
 <p>Su ubicación gráfica es la de <a href="probabilidad-los-modelos.html#fig:tmenor2">8.10</a>:</p>
 <div class="figure"><span style="display:block;" id="fig:tmenor2"></span>
-<img src="EstadisticaParaCienciasSocialesConR_files/figure-html/tmenor2-1.svg" alt="Área correspondiente a la probabilidad de hallar una variable con ditribución t con un grado de libertad por debajo de 2" width="672" />
+<img src="EstadisticaParaCienciasSocialesConR_files/figure-html/tmenor2-1.svg" alt="Área correspondiente a la probabilidad de hallar una variable con distribución t con un grado de libertad por debajo de 2" width="672" />
 <p class="caption">
-Figura 8.10: Área correspondiente a la probabilidad de hallar una variable con ditribución t con un grado de libertad por debajo de 2
+Figura 8.10: Área correspondiente a la probabilidad de hallar una variable con distribución t con un grado de libertad por debajo de 2
 </p>
 </div>
 <p>Como en las otras distribuciones, el área superior se calcula como el complemento: <span class="math display">\[P(t_{1} &gt; 2)=1-P(t_{1}\leq2)=1-0.8524=0.1476\]</span></p>
@@ -1436,7 +1436,7 @@ Figura 8.15: Área correspondiente a <span class="math inline">\(P(F_{3,2}\leq 4
 <p>El área superior es la diferencia a uno:</p>
 <pre><code>## [1] 0.2064</code></pre>
 <p>De modo que <span class="math inline">\(P(F_{3,2} &gt; 4) = 0.2064\)</span>.</p>
-<p>El percentil 95 de una distrindución F con 3 grados de libertad en el numerador y dos en el denominador es:</p>
+<p>El percentil 95 de una distribución F con 3 grados de libertad en el numerador y dos en el denominador es:</p>
 <pre><code>## [1] 19.1643</code></pre>
 <p>Es decir que <span class="math inline">\(P(F_{3,2}&lt;19.16)=0.95\)</span>
 Que implica que el 5% de los valores de la variable <span class="math inline">\(F_{3,2}\)</span> superan a <span class="math inline">\(19.16\)</span>. <span class="math inline">\(P(F_{3,2}&gt;19.16)=0.05\)</span></p>
@@ -1529,7 +1529,7 @@ dbinom(x, “cantidad de ensayos”, “probabilidad de éxito a cada ensayo”)
 </div>
 <div id="chi-cuadrado" class="section level4 hasAnchor" number="8.7.2.3">
 <h4><span class="header-section-number">8.7.2.3</span> Chi cuadrado<a href="probabilidad-los-modelos.html#chi-cuadrado" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>La probabilidad de hallar una variable con distribución <span class="math inline">\(\chi^2\)</span> con 15 grados de libertad, por debajo de 10, se escribe <span class="math inline">\(P(\chi^2_{15}&lt;10)\)</span> yse solicita:</p>
+<p>La probabilidad de hallar una variable con distribución <span class="math inline">\(\chi^2\)</span> con 15 grados de libertad, por debajo de 10, se escribe <span class="math inline">\(P(\chi^2_{15}&lt;10)\)</span> y se solicita:</p>
 <div class="sourceCode" id="cb447"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb447-1"><a href="probabilidad-los-modelos.html#cb447-1" tabindex="-1"></a><span class="fu">pchisq</span>(<span class="dv">10</span>, <span class="dv">15</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1802601</code></pre>
 <p>Redondeado a cuatro decimales:</p>
@@ -1623,7 +1623,7 @@ El <span class="math inline">\(z\)</span> que deja <span class="math inline">\(3
 <div id="áreas-centrales" class="section level3 hasAnchor" number="8.7.4">
 <h3><span class="header-section-number">8.7.4</span> Áreas centrales<a href="#%C3%A1reas-centrales" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En lo que sigue será frecuente que se necesiten percentiles de la variable que delimitan determinadas áreas centrales de la distribución. Cualquiera sea el modelo de probabilidad que se use, suele denominarse (<span class="math inline">\(1-\alpha\)</span>) al área central, con lo que <span class="math inline">\(\alpha\)</span> es el área que queda por fuera de la zona central, dividida en dos. Los cuantiles que delimitan esa área central de (<span class="math inline">\(1-\alpha\)</span>) son (<span class="math inline">\(\frac{\alpha}{2}\)</span>) y (<span class="math inline">\(1-\frac{\alpha}{2}\)</span>).</p>
-<p>Por ejemplo, para determinar cuáles son los valores de una distribución <span class="math inline">\(\chi^2\)</span> con 13 grados delibertad que delimitan un 90% de área central, calculamos <span class="math inline">\(\alpha\)</span>, que es el 10% restante y los cuantiles son: 0.05 (<span class="math inline">\(\frac{\alpha}{2}\)</span>) y 0.95 (<span class="math inline">\(1-\frac{\alpha}{2}\)</span>).</p>
+<p>Por ejemplo, para determinar cuáles son los valores de una distribución <span class="math inline">\(\chi^2\)</span> con 13 grados de libertad que delimitan un 90% de área central, calculamos <span class="math inline">\(\alpha\)</span>, que es el 10% restante y los cuantiles son: 0.05 (<span class="math inline">\(\frac{\alpha}{2}\)</span>) y 0.95 (<span class="math inline">\(1-\frac{\alpha}{2}\)</span>).</p>
 <div class="sourceCode" id="cb477"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb477-1"><a href="probabilidad-los-modelos.html#cb477-1" tabindex="-1"></a><span class="fu">qchisq</span>(.<span class="dv">05</span>, <span class="dv">13</span>)</span></code></pre></div>
 <pre><code>## [1] 5.891864</code></pre>
 <div class="sourceCode" id="cb479"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb479-1"><a href="probabilidad-los-modelos.html#cb479-1" tabindex="-1"></a><span class="fu">qchisq</span>(.<span class="dv">95</span>, <span class="dv">13</span>)</span></code></pre></div>
@@ -1656,7 +1656,7 @@ Tankard, J. 1984. <em><span>The Statistics Pioneers</span></em>. Cambridge Massa
 <ol start="42">
 <li id="fn42"><p>Con lo que hemos elegido tomar como éxito el resultado <em>cara</em><a href="probabilidad-los-modelos.html#fnref42" class="footnote-back">↩︎</a></p></li>
 <li id="fn43"><p>El nombre “normal” de este modelo no hace referencia al sentido
-coloquial del término, como juico acerca de la salud o el
+coloquial del término, como juicio acerca de la salud o el
 comportamiento humano, sino a un modelo de distribución en el que es
 más frecuente hallar valores cercanos al promedio y resultan
 igualmente infrecuentes valores extremos mayores o menores.<a href="probabilidad-los-modelos.html#fnref43" class="footnote-back">↩︎</a></p></li>

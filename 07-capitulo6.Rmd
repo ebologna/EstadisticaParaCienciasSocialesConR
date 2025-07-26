@@ -614,7 +614,7 @@ suele agregarse otros, según los objetivos de la investigación, por
 ejemplo, en las encuestas políticas, es frecuente establecer cuotas de
 acuerdo al voto en las elecciones pasadas. Los ejemplos que indicamos
 antes, como reproducir la proporción de varones y mujeres entre los
-docentes de escuala primaria, o de las diferentes proporciones de niveles
+docentes de escuela primaria, o de las diferentes proporciones de niveles
 educativos de la población en la muestra, son casos de muestreo por
 cuotas.
 

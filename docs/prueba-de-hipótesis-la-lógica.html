@@ -563,7 +563,7 @@ porque “salir con la misma frecuencia que C” equivale a decir que, “en
 infinitas tiradas, la mitad de la veces saldrá X”, por lo que
 escribiremos nuestra hipótesis nula así: <span class="math inline">\(H_0: P=1/2\)</span>, a la que leeremos
 “la hipótesis nula afirma que la proporción de veces que saldrá cara es
-1/2”. Como no es posible arrojar la moneda infinitas veces, generamos un conjunto de datos para hacer la prueba, tirando al moneda un nùmero finito de veces, digamos cien veces, esa es la muestra de tiradas.<br />
+1/2”. Como no es posible arrojar la moneda infinitas veces, generamos un conjunto de datos para hacer la prueba, tirando al moneda un número finito de veces, digamos cien veces, esa es la muestra de tiradas.<br />
 Al arrojarla 100 veces esperaríamos -si la hipótesis nula se sostiene-, que
 salga aproximadamente 50 veces X. Las 100 tiradas son una muestra de las
 infinitas tiradas de la moneda, por lo que posiblemente no salga
@@ -599,7 +599,7 @@ rechazar la <span class="math inline">\(H_{0}\)</span>, porque eso significa que
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="center">La hipótesis nula es una <strong>afirmación</strong> sobre un <strong>parámetro</strong> que indica ausencia de diferencia en ralción a cierto valor de referencia.</td>
+<td align="center">La hipótesis nula es una <strong>afirmación</strong> sobre un <strong>parámetro</strong> que indica ausencia de diferencia en relación a cierto valor de referencia.</td>
 </tr>
 </tbody>
 </table>
@@ -738,7 +738,7 @@ por el contrario, está entre -1.96 y 1.96 que pertenece a la parte de
 valores centrales de la distribución, los más probables. En
 consecuencia, la decisión es la de no rechazar <span class="math inline">\(H_{0}\)</span> y concluir que no hay evidencia para creer que el tiempo se tarda en completar la carrera haya cambiado respecto del valor histórico. Dicho de otra manera, el valor observado de
 <span class="math inline">\({\overline{x}}_{obs} = 7.50\)</span> es un resultado esperable si la
-media poblacional fuera de <span class="math inline">\(7.30\)</span>. Una media muestral de <span class="math inline">\(7.50\)</span> es compatible con una media problacional de <span class="math inline">\(7.30\)</span>.</p>
+media poblacional fuera de <span class="math inline">\(7.30\)</span>. Una media muestral de <span class="math inline">\(7.50\)</span> es compatible con una media poblacional de <span class="math inline">\(7.30\)</span>.</p>
 <p>Por la forma en que hemos razonado y tomado la decisión, se comprende
 que a los valores de <span class="math inline">\(z\)</span> comprendidos entre -1.96 y 1.96 se los denomine <strong>zona de no rechazo de <span class="math inline">\(H_{0}\)</span></strong>. El otro conjunto de valores de <span class="math inline">\(z\)</span>, los mayores a 1.96 junto a los menores a -1.96, constituyen la <strong>zona de rechazo de <span class="math inline">\(H_{0}\)</span></strong>.</p>
 <p>Luego de haber considerado a 0.05 como la probabilidad a la que llamamos “pequeña”, quedaron determinados los
@@ -938,9 +938,9 @@ del valor hipotético, sino que indica en qué <em>dirección</em> se espera que
 difiera. Por ejemplo, puede esperarse, en el ejemplo anterior, que la carrera es termine con promedio superior a 6.50, con lo que ahora la <span class="math inline">\(H_{1}\)</span> dirá que <span class="math inline">\(\mu &gt; 6.50\)</span>. Se trata en este caso de una prueba unilateral y solo rechazaremos la <span class="math inline">\(H_{0}\)</span> si encontramos valores sustancialmente <em>mayores</em> que 6.50. Para el mismo nivel de significación del 5%, el valor <span class="math inline">\(z\)</span> que nos interesa es el que delimita un área <em>superior</em> de 0.05.</p>
 <p>Notemos la diferencia con las pruebas que tratamos antes: al nivel de 5% buscábamos dos <span class="math inline">\(z\)</span> que dejaban en total 0.05 de área extrema (por encima y por debajo) o lo que es lo mismo, los dos <span class="math inline">\(z\)</span> que dejan el 95% del área central. Ahora, como la prueba es unilateral y solo nos interesan valores que se excedan, solo buscamos un <span class="math inline">\(z\)</span> crítico, el que deja al 5% por encima. Ese valor de <span class="math inline">\(z_c\)</span> es 1.64.<a href="#fn70" class="footnote-ref" id="fnref70"><sup>70</sup></a></p>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-501"></span>
-<img src="EstadisticaParaCienciasSocialesConR_files/figure-html/unnamed-chunk-501-1.svg" alt="Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un niel de significación del 5%" width="672" />
+<img src="EstadisticaParaCienciasSocialesConR_files/figure-html/unnamed-chunk-501-1.svg" alt="Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un nivel de significación del 5%" width="672" />
 <p class="caption">
-Figura 11.9: Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un niel de significación del 5%
+Figura 11.9: Ubicación de la zona de rechazo de Ho para una prueba unilateral derecha a un nivel de significación del 5%
 </p>
 </div>
 <p>Por oposición a las anteriores, las pruebas unilaterales se llaman
@@ -1210,7 +1210,7 @@ críticos bajo un modelo binomial, se transforma el valor hipotético de <span c
 <p><span class="math display">\[X = P*n = 0.30*50 = 15\]</span></p>
 <p>Con lo que el punto crítico es el valor de <span class="math inline">\(\widehat{x}\)</span> que deja por
 encima (porque es una prueba unilateral derecha) al 5% de los valores
-posibles. Buscamos el percentil 95 de la distribución binomial corespondiente a los parámetros:
+posibles. Buscamos el percentil 95 de la distribución binomial correspondiente a los parámetros:
 <span class="math inline">\(n = 50\)</span>, <span class="math inline">\(P = 0.30\)</span> y <span class="math inline">\(P( X &gt; x) = 0.05\)</span></p>
 <p>La probabilidad es la de la cola derecha de la distribución, por ser una prueba unilateral derecha, y corresponde a una probabilidad acumulada de 0.95, de modo que el percentil es 95, que equivale a <span class="math inline">\(P( X \leq x) = 0.95\)</span> es:</p>
 <div class="sourceCode" id="cb567"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb567-1"><a href="prueba-de-hipótesis-la-lógica.html#cb567-1" tabindex="-1"></a><span class="fu">qbinom</span>(.<span class="dv">95</span>, <span class="dv">50</span>, .<span class="dv">30</span>)</span></code></pre></div>
@@ -1415,7 +1415,7 @@ que no hay efecto, por lo que cometer el ETI será creer que hay efecto
 (rechazar <span class="math inline">\(H_{0}\)</span>) cuando en realidad no lo haya (<span class="math inline">\(H_{0}\)</span> verdadera). Como no
 sabemos si <span class="math inline">\(H_{0}\)</span> es verdadera o falsa, cada vez que rechacemos <span class="math inline">\(H_{0}\)</span>
 debemos recordar que hay una probabilidad <span class="math inline">\(\alpha\)</span> de haber tomado una decisión
-incorrecta. Esta incertidumbre está siempre presente en evaluación humana en los campos psicológico y educativo, así como en la evaluación de efectos e impactos de programas de intervención social, o en la comparación de grupos para conocer diferencias entre varones y mujeres, medir los efectos del nivel de educación, etc. En general, está presente en la toma de decisión en contextos de incertidumbre, que son aquellos en que no se conocce a todos los elementos de una población, sino a una muestra de ellos.</p>
+incorrecta. Esta incertidumbre está siempre presente en evaluación humana en los campos psicológico y educativo, así como en la evaluación de efectos e impactos de programas de intervención social, o en la comparación de grupos para conocer diferencias entre varones y mujeres, medir los efectos del nivel de educación, etc. En general, está presente en la toma de decisión en contextos de incertidumbre, que son aquellos en que no se conoce a todos los elementos de una población, sino a una muestra de ellos.</p>
 <p>Ejemplo ilustrativo: las preguntas de un examen oral son una muestra de
 lo que quien está rindiendo sabe y, si se usa un bolillero, la elección del tema que debe desarrollarse es aleatoria. Supongamos que alguien va a un examen y ha estudiado muy poco, pero la unidad que le toca desarrollar es la única que sí estudió.<br />
 En ese caso responderá correctamente y la decisión del o la docente será darle por aprobado el examen. Si supiéramos que ignora todos
@@ -1460,7 +1460,7 @@ aspectos fundamentales de las pruebas de hipótesis:</p>
 <li><p>Las conclusiones son probabilísticas, no son verdaderas ni falsas.</p></li>
 <li><p>Toda conclusión proveniente de estos procedimientos está sujeta a error.</p></li>
 </ul>
-<p>Y estos no son problemas del procedimiento de prueba de hipótesis, sino que es reflejo de las posibilidades humanas de contruir conocimiento: no hay certezas, solo hay aproximaciones.</p>
+<p>Y estos no son problemas del procedimiento de prueba de hipótesis, sino que es reflejo de las posibilidades humanas de construir conocimiento: no hay certezas, solo hay aproximaciones.</p>
 </div>
 <div id="etii-mu-alpha-y-n" class="section level2 hasAnchor" number="11.5">
 <h2><span class="header-section-number">11.5</span> <em>ETII:</em> <span class="math inline">\(\mu\)</span>, <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(n\)</span><a href="prueba-de-hipótesis-la-lógica.html#etii-mu-alpha-y-n" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -2122,7 +2122,7 @@ cálculo del valor <span class="math inline">\(p\)</span> es equivalente, solo q
 la variable <em>número de éxitos</em>. En el ejemplo, el número observado de
 éxitos era de 16, la probabilidad condicional que corresponde al valor <span class="math inline">\(p\)</span> es entonces la probabilidad de hallar en la muestra de 50 casos, 16
 personas o más que vayan a votar al candidato, si en la población la
-proporción de quienes lo votarán fuera de 30% (<span class="math inline">\(H_0\)</span> verdadera). Se complementa la probabilildad acumulada hasta 15 (variable dicreta):</p>
+proporción de quienes lo votarán fuera de 30% (<span class="math inline">\(H_0\)</span> verdadera). Se complementa la probabilidad acumulada hasta 15 (variable discreta):</p>
 <div class="sourceCode" id="cb575"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb575-1"><a href="prueba-de-hipótesis-la-lógica.html#cb575-1" tabindex="-1"></a><span class="fu">round</span>(<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pbinom</span>(<span class="dv">15</span>, <span class="dv">50</span>, .<span class="dv">3</span>), <span class="dv">4</span>)</span></code></pre></div>
 <pre><code>## [1] 0.4308</code></pre>
 <p><span class="math display">\[P(\widehat{x} \geq 16/n = 50,\ P = 0.30) = 0.4308\]</span></p>
@@ -2208,7 +2208,7 @@ que la normal.</p>
 programas de análisis de datos ofrecen los resultados de las pruebas de
 hipótesis siempre en términos del valor <span class="math inline">\(p\)</span>. Eso permite que quien lee
 la salida pueda decidir si rechaza o no rechaza la <span class="math inline">\(H_{0}\)</span>, de acuerdo al
-nivel de significación que haya fijado. Para facilitar la interpretación, los programas de análisis de datos indican la “fuerza de la evidencia”, que se espresa en cuán pequeño es el valor <span class="math inline">\(p\)</span>, con asteriscos <span class="math inline">\(*\)</span> simples, dobles, etc. La interpretación es la siguiente:</p>
+nivel de significación que haya fijado. Para facilitar la interpretación, los programas de análisis de datos indican la “fuerza de la evidencia”, que se expresa en cuán pequeño es el valor <span class="math inline">\(p\)</span>, con asteriscos <span class="math inline">\(*\)</span> simples, dobles, etc. La interpretación es la siguiente:</p>
 <table>
 <thead>
 <tr class="header">
@@ -2324,7 +2324,7 @@ Se instala el paquete correspondiente:</p>
 <span id="cb594-6"><a href="prueba-de-hipótesis-la-lógica.html#cb594-6" tabindex="-1"></a>        <span class="at">weights =</span>ENFR2013<span class="sc">$</span>PONDERACION))), <span class="dv">3</span>) <span class="sc">*</span> <span class="dv">100</span></span></code></pre></div>
 <pre><code>##     1     2     3     9   Sum 
 ##  39.5  34.7  19.5   6.3 100.0</code></pre>
-<p>Que expande los aproximadamente 35 mil casos relevados a casi 26 millones de la población a la que la ENFR2013 representa. Las frecuencias relativas de las dos tablas son similares. Aplicar los ponderadores es útil para observar medidas descriptivas, pero no puede usarse para hacer inferencias, ya que se incrementaría de manera artificial el tamaño de la muestra. Esto debe cuidarse en algunos programas de análisis de datos, que permiten fijar poderadores y dejarlos activos para cualquier procedimiento. Una prueba de hipótesis o un intervalo de confianza realizado con los factores de ponderación están mal calculados, porque el tamaño de muestra es falso. Salvo en el caso que los ponderadores estén reescalados a <span class="math inline">\(1\)</span>, porque así no se altera el tamaño de la muestra, solo se ajusta su composición.</p>
+<p>Que expande los aproximadamente 35 mil casos relevados a casi 26 millones de la población a la que la ENFR2013 representa. Las frecuencias relativas de las dos tablas son similares. Aplicar los ponderadores es útil para observar medidas descriptivas, pero no puede usarse para hacer inferencias, ya que se incrementaría de manera artificial el tamaño de la muestra. Esto debe cuidarse en algunos programas de análisis de datos, que permiten fijar ponderadores y dejarlos activos para cualquier procedimiento. Una prueba de hipótesis o un intervalo de confianza realizado con los factores de ponderación están mal calculados, porque el tamaño de muestra es falso. Salvo en el caso que los ponderadores estén reescalados a <span class="math inline">\(1\)</span>, porque así no se altera el tamaño de la muestra, solo se ajusta su composición.</p>
 <p>Para realizar la prueba sobre la proporción, se debe construir la categoría de referencia, que en este caso es la 3 de las tablas anteriores (obesidad). Se genera una nueva variable, que se llamará “obesidad” en la matriz de datos, de tal modo que: cuando “IMC_agrupado” valga 3 tengamos lo que llamamos “éxito”; cuando sea 9, sea un caso perdido (NA): y si vale 1 ó 2, vale cero.<br />
 Luego se verifica que las nuevas categorías coincidan con las previstas, por medio de una tabla bivariada entre la variable original y la nueva. Una tabla univariada da los absolutos de “obesidad” y finalmente los relativos, donde se ve que en la muestra, la proporción de personas con obesidad es del <span class="math inline">\(21\%\)</span>.</p>
 <div class="sourceCode" id="cb596"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb596-1"><a href="prueba-de-hipótesis-la-lógica.html#cb596-1" tabindex="-1"></a>ENFR2013<span class="sc">$</span>obesidad <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(ENFR2013<span class="sc">$</span>IMC_AGRUPADO <span class="sc">==</span> <span class="dv">3</span>, <span class="dv">1</span>, <span class="fu">ifelse</span>(ENFR2013<span class="sc">$</span>IMC_AGRUPADO <span class="sc">==</span> <span class="dv">9</span>, <span class="cn">NA</span>, <span class="dv">0</span>))</span>

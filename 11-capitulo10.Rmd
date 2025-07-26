@@ -89,7 +89,7 @@ construirá un intervalo, que dirá, por ejemplo, "hay una confianza del
 95% en que el intervalo $[6.10; 6.90]$ contiene al promedio con que se termina esa carrera". De manera equivalente, en
 lugar de "entre quienes egresan hay alrededor del 70% de mujeres", se
 afirmará algo como "con una confianza del 95%, el intervalo $[68; 72]$%
-contiene a la proporción de mujeres sobre el total quienes egresan". O que "con una confianza del 95%, el ingreso salarial promedio de los trabajadores del aglomerado Gran Córdoba está entre $16710.5$ y $17010.5$. Y también que en la población mayor de 18 años residente en países de América Latina, hay una confianza de 90% que la propoción de quienes creen que se puede confiar en la mayoría de la gente, esté en el intervalo $[14.20, 14.49]$%. 
+contiene a la proporción de mujeres sobre el total quienes egresan". O que "con una confianza del 95%, el ingreso salarial promedio de los trabajadores del aglomerado Gran Córdoba está entre $16710.5$ y $17010.5$. Y también que en la población mayor de 18 años residente en países de América Latina, hay una confianza de 90% que la proporción de quienes creen que se puede confiar en la mayoría de la gente, esté en el intervalo $[14.20, 14.49]$%. 
 
 Vemos entonces que esta forma de estimar ofrece dos números, los límites de un intervalo, del que esperamos contenga al parámetro que estimamos.
 Decimos "esperamos que se contenga" porque no hay certeza absoluta de
@@ -139,7 +139,7 @@ ggplot(data = data.frame(z = c(-4, 4)), aes(z)) +
   annotate(geom = "rect", xmin = -.01, xmax = .01, ymin = -.01, ymax = .01, col = "red")
 ```
 
-Ya sabemos que una variable que tenga distribución normal tiene probabilidad 0.95 de tomar un valor que diste menos de $1.96$ desviaciones estándar de la media. Eso mismo, dicho en términos frecuenciales implica que, bajo el modelo normal, el 95% de los casos se encuentra entre 1.96 desviacioens estándar por debajo y 1.96 desviaciones estándar por encima de la media. Por lo cual, si extrajéramos todas las muestras de tamaño $n$ posibles de esa población, el 95% de ellas estaría entre $\mu - 1.96*\sigma_{\overline{x}}$ y $\mu + 1.96*\sigma_{\overline{x}}$, o lo que es lo mismo, entre $\mu - 1.96*\frac{\sigma}{\sqrt{n}}$ y\ $\mu + 1.96*\frac{\sigma}{\sqrt{n}}$.
+Ya sabemos que una variable que tenga distribución normal tiene probabilidad 0.95 de tomar un valor que diste menos de $1.96$ desviaciones estándar de la media. Eso mismo, dicho en términos frecuenciales implica que, bajo el modelo normal, el 95% de los casos se encuentra entre 1.96 desviaciones estándar por debajo y 1.96 desviaciones estándar por encima de la media. Por lo cual, si extrajéramos todas las muestras de tamaño $n$ posibles de esa población, el 95% de ellas estaría entre $\mu - 1.96*\sigma_{\overline{x}}$ y $\mu + 1.96*\sigma_{\overline{x}}$, o lo que es lo mismo, entre $\mu - 1.96*\frac{\sigma}{\sqrt{n}}$ y\ $\mu + 1.96*\frac{\sigma}{\sqrt{n}}$.
 
 
 ```{r int95, echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Intervalo en torno a la media poblacional que incluye al 95% de las posibles medias muestrales"}
@@ -629,7 +629,7 @@ que la primera estimación es más precisa, tiene menos error.
 Con la estimación de los ingresos salariales sucedió lo mismo, al 95% el error 674.80 fue y al 99% subió a 884.80.
 Del mismo modo, al estimar, con una confianza del 95%, la proporción de
 quienes aprobaron el parcial escribimos $0.920 \pm 0.032$, el error de
-estimación es en este caso de 0.032 (ó 3.2%). La estimación de la proporción de gente que cree que se puede confiar en los demas, hecha con el mismo nivel de confianza, arrojó un error de estimación de 0.0056, 0.56%.
+estimación es en este caso de 0.032 (ó 3.2%). La estimación de la proporción de gente que cree que se puede confiar en los demás, hecha con el mismo nivel de confianza, arrojó un error de estimación de 0.0056, 0.56%.
 
 ### El error de estimación en la media
 
@@ -655,7 +655,7 @@ probabilísticas, es decir muestras aleatorias, para las cuales rigen las leyes 
 La distribución $t$ de Student tiene aplicación cuando se trata de muestras pequeñas, sin embargo, como se señaló antes, cuando los grados de libertad aumentan, esta distribución se aproxima a la normal. Por esta razón, al construir los intervalos, no hay inconveniente en calcular los percentiles que corresponden al nivel de confianza elegido, usando el modelo $t$. Si la muestra es suficientemente grande, el resultado será el mismo que con la normal. Así se evita decidir cada vez, en base al tamaño de la muestra, si se usa una distribución o la otra. Por esa razón, de aquí en adelante, calcularemos los percentiles necesarios para estimar la media, con la distribución $t$ con $n-1$ grados de libertad.
 
 Para ejemplificar los efectos de los diferentes elementos en el error de
-estimación, usaremos la base de la Encuesta Nacional sobre Prevalencias de Consumo de Sustancias Psicoactivas 2011. Con esos datos, estimaremos la edad promedio a la que las personaslos encuestadas dicen que tomaron alcohol por primera vez en su vida. La variable se llama BIBA03 y corresponde a la siguiente pregunta del cuestionario:
+estimación, usaremos la base de la Encuesta Nacional sobre Prevalencias de Consumo de Sustancias Psicoactivas 2011. Con esos datos, estimaremos la edad promedio a la que las personas encuestadas dicen que tomaron alcohol por primera vez en su vida. La variable se llama BIBA03 y corresponde a la siguiente pregunta del cuestionario:
 
 ¿Qué edad tenía cuando consumió bebidas alcohólicas por primera vez?
 (Edad en años)
@@ -1012,7 +1012,7 @@ Y la estimación se escribe:$$14979 \pm 889$$
 
 ### Intervalo para la proporción
 
-Para estimar la propoción de personas inactivas a partir de la base de la EPH, hay que definir a esa categoría como la de referencia (1) en la variable "ESTADO" y asignar cero a las demás categorias. Para hacerlo, definimos "inactives", como una nueva variable de la base eph.3.18 cuyo valor dependerá del que tenga "ESTADO". Si  "ESTADO" vale:
+Para estimar la proporción de personas inactivas a partir de la base de la EPH, hay que definir a esa categoría como la de referencia (1) en la variable "ESTADO" y asignar cero a las demás categorías. Para hacerlo, definimos "inactives", como una nueva variable de la base eph.3.18 cuyo valor dependerá del que tenga "ESTADO". Si  "ESTADO" vale:
 
 - 3 (inactivo), entonces "inactives" vale 1
 - 0 o 4, "inactives" no se cuenta, porque son entrevistas no realizadas, o menores de 10 años, corresponde NA
@@ -1032,7 +1032,7 @@ Y con una tabla verificamos que el 1 de la nueva variable corresponda al 3 de "E
 addmargins(table(eph.3.18$ESTADO, eph.3.18$inactives))
 ```
 
-La nueva variable (inactives) tiene 25268 casos en el valor cero, que corresponden a 23398 a ESTADO = 1 (ocupados) más 1870 de ESTADO = 2 (desocupado) y 23167 casos en el valos uno, que son los 23167 de ESTADO = 3 (inactivo). El total de casos es ahora 48435, porque se quitaron los ceros y los cuatros.  
+La nueva variable (inactives) tiene 25268 casos en el valor cero, que corresponden a 23398 a ESTADO = 1 (ocupados) más 1870 de ESTADO = 2 (desocupado) y 23167 casos en el valor uno, que son los 23167 de ESTADO = 3 (inactivo). El total de casos es ahora 48435, porque se quitaron los ceros y los cuatros.  
 Ahora la estimación al 95% de la proporción poblacional de personas inactivas, por método de Clopper-Pearson requiere que calculemos los cuantiles .025 y .975 de la distribución binomial con $n=48435$ y $p=23167/48435=0.478=47.8\%$ y que los dividamos por el tamaño de la muestra.
 
 
@@ -1057,7 +1057,7 @@ Efectivamente, con un tamaño de muestra grande, el método de Wald, que usa la 
 
 ### Cobertura
 
-Los siguientes comandos generan 200 intervalos para estimar la media de ingresos salariales de la EPH a partir de 200 muestras, de  tamaño 30. Es una simulación, porque se trata a los datos de la EPH como si fuera una población y a la media de los ingresos saariales de la EPH como si fuera el parámetro poblacional. El ejercicio sirve para observar el efecto, por ejemplo del tamaño de la muestra. La sintaxis dice lo siguiente:  
+Los siguientes comandos generan 200 intervalos para estimar la media de ingresos salariales de la EPH a partir de 200 muestras, de  tamaño 30. Es una simulación, porque se trata a los datos de la EPH como si fuera una población y a la media de los ingresos salariales de la EPH como si fuera el parámetro poblacional. El ejercicio sirve para observar el efecto, por ejemplo del tamaño de la muestra. La sintaxis dice lo siguiente:  
 
 - Se definen:
     - **resultado**: una matriz de datos
@@ -1106,7 +1106,7 @@ La matriz puede visualizarse, desde el panel superior derecho o verse sus primer
 head(resultado)
 ```
 
-Y resumirse en una distridición de frecuencias:
+Y resumirse en una distribución de frecuencias:
 
 ```{r echo=TRUE}
 (tabla_cobertura <- freq(resultado$contiene_al_parametro, report.nas = FALSE, cumul = FALSE))

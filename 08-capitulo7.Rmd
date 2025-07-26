@@ -679,7 +679,7 @@ padecer la enfermedad, esa es $P(B_{1})$, luego esa probabilidad cambia cuando s
 
 Veamos un ejemplo que presentó @cohen1994 en un artículo crítico hacia los procedimientos tradicionales de análisis estadístico. La aplicación ilustra el aporte del teorema a las interpretaciones de los resultados que arrojan las pruebas diagnósticas.
 
-La prevalencia de esquizofrenia en personas addultas es de aproximadamente el 2%, que indica que aproximadamente 2 de cada 100 personas en la población adulta general padece la enfermedad. Se dispone de un conjunto de pruebas diagnósticas del que se estima que tiene al menos un 95% de precisión al hacer diagnósticos positivos (sensibilidad) y aproximadamente 97% de precisión al declarar normalidad (especificidad).
+La prevalencia de esquizofrenia en personas adultas es de aproximadamente el 2%, que indica que aproximadamente 2 de cada 100 personas en la población adulta general padece la enfermedad. Se dispone de un conjunto de pruebas diagnósticas del que se estima que tiene al menos un 95% de precisión al hacer diagnósticos positivos (sensibilidad) y aproximadamente 97% de precisión al declarar normalidad (especificidad).
 
 Para expresar formalmente estos datos, tratamos por un lado, la
 situación real, la de padecer o no de esquizofrenia. Llamamos $E$ al
@@ -694,7 +694,7 @@ Dada una persona cuyas pruebas dan un resultado positivo, nos preguntamos por la
 
 Este es un problema que requiere que se invierta una probabilidad
 condicional, ya que conocemos la probabilidad de obtener un resultado
-positivo si el individuo padece esquizofrenia $P(+/E)$, y queremos saber la probabilidad de que padezca esuizofrenia dado que la prueba dio positiva, que es $P(E/+)$.
+positivo si el individuo padece esquizofrenia $P(+/E)$, y queremos saber la probabilidad de que padezca esquizofrenia dado que la prueba dio positiva, que es $P(E/+)$.
 
 En la aplicación del teorema de Bayes, el universo está compuesto por un 98% de personas no esquizofrénicas y un 2% de esquizofrénicas y la prueba puede dar positiva tratándose de alguien que padece la enfermedad (muy frecuentemente) o que no la padece (con poca probabilidad). Reemplazamos en la expresión del teorema de Bayes y tenemos:
 

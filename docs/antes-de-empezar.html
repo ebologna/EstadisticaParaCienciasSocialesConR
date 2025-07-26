@@ -602,7 +602,7 @@ Una línea de tiempo sobre el desarrollo de R puede encontrar en <a href="https:
 <div id="instalación-de-r-y-rstudio" class="section level3 unnumbered hasAnchor">
 <h3>Instalación de R y RStudio<a href="#instalaci%C3%B3n-de-r-y-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En <a href="http://cran.r-project.org">http://cran.r-project.org</a> “Download R for [Linux, Mac o Windows]”, y luego “install R for the first time”. Una vez descargado, se instala siguiendo las instrucciones de las pantallas, aceptando las opciones por defecto que se ofrecen.</p>
-<p>Una vez que R está instalado, se debe sumar RStudio. El lugar de descarga es <a href="http://www.rstudio.com/products/rstudio/download/">http://www.rstudio.com/products/rstudio/download/</a>. Allí se elige la version gratis (free version) de RStudio Desktop y se baja hasta encontrar el sistema operativo y la version que corresponda a nuestro equipo. Luego se ejecuta el instalador de RStudio y se eligen las opciones por defecto. Cuando esté ya instalado, se accede por medio de RStudio; si al instalar R se creó un acceso directo a R en el escritorio, se lo puede eliminar. Al abrir RStudio, R es detectado automáticamente y desde allí operaremos.</p>
+<p>Una vez que R está instalado, se debe sumar RStudio. El lugar de descarga es <a href="http://www.rstudio.com/products/rstudio/download/">http://www.rstudio.com/products/rstudio/download/</a>. Allí se elige la versión gratis (free version) de RStudio Desktop y se baja hasta encontrar el sistema operativo y la version que corresponda a nuestro equipo. Luego se ejecuta el instalador de RStudio y se eligen las opciones por defecto. Cuando esté ya instalado, se accede por medio de RStudio; si al instalar R se creó un acceso directo a R en el escritorio, se lo puede eliminar. Al abrir RStudio, R es detectado automáticamente y desde allí operaremos.</p>
 </div>
 <div id="los-componentes-de-rstudio" class="section level3 unnumbered hasAnchor">
 <h3>Los componentes de RStudio<a href="antes-de-empezar.html#los-componentes-de-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -688,10 +688,10 @@ Este objeto es un número, lo que puede saberse si se pregunta de qué clase es 
 <p>Pero como se usa a menudo, hay una función de biblioteca para eso:</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="antes-de-empezar.html#cb35-1" tabindex="-1"></a><span class="fu">sqrt</span>(x)</span></code></pre></div>
 <pre><code>## [1] 1.732051</code></pre>
-<p>Para raíces que no sean cuadradas, se debe usar la potencia fraccionaria. Para la raiz quinta de 24 es:</p>
+<p>Para raíces que no sean cuadradas, se debe usar la potencia fraccionaria. Para la raíz quinta de 24 es:</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="antes-de-empezar.html#cb37-1" tabindex="-1"></a><span class="dv">24</span><span class="sc">^</span>(<span class="dv">1</span> <span class="sc">/</span> <span class="dv">5</span>)</span></code></pre></div>
 <pre><code>## [1] 1.888175</code></pre>
-<p>Un comando útil es el de redondeo. Si no queremos expresar la raiz de siete con seis decimales, sino solo con dos, se redondea a dos decimales:</p>
+<p>Un comando útil es el de redondeo. Si no queremos expresar la raíz de siete con seis decimales, sino solo con dos, se redondea a dos decimales:</p>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="antes-de-empezar.html#cb39-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="dv">7</span>)</span>
 <span id="cb39-2"><a href="antes-de-empezar.html#cb39-2" tabindex="-1"></a>x</span></code></pre></div>
 <pre><code>## [1] 2.645751</code></pre>
@@ -717,7 +717,7 @@ Este objeto es un número, lo que puede saberse si se pregunta de qué clase es 
 <p>Cuando pedimos que muestre los elementos de l:</p>
 <div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="antes-de-empezar.html#cb51-1" tabindex="-1"></a>l</span></code></pre></div>
 <pre><code>## [1] &quot;1&quot; &quot;3&quot; &quot;a&quot;</code></pre>
-<p>Aparecen los números 1 y 3 entre comillas, lo que indica que los está tomando como caracteres, por lo que no podrá operar con ellos. Si lo intentamos por ejemplo, multiplicandolo por cinco, se obtiene un error:</p>
+<p>Aparecen los números 1 y 3 entre comillas, lo que indica que los está tomando como caracteres, por lo que no podrá operar con ellos. Si lo intentamos por ejemplo, multiplicándolo por cinco, se obtiene un error:</p>
 <p>Error in 5 * c : non-numeric argument to binary operator</p>
 <p>Esto sucede porque los números fueron tratados como caracteres.</p>
 <p>Ejemplo: Los valores de PBI de cinco países son 10000, 3000, 7000, 4000 y 15000, se los puede concatenar así, definiendo el vector que los contiene con el nombre pib5:</p>
@@ -838,7 +838,7 @@ Por ejemplo, si tenemos 10 observaciones que corresponden a 7 varones y 3 mujere
 <div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="antes-de-empezar.html#cb113-1" tabindex="-1"></a>edad <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">20</span>, <span class="dv">21</span>, <span class="dv">22</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">28</span>, <span class="dv">28</span>)</span></code></pre></div>
 <p>Entonces, se crea una matriz de datos con el comando:</p>
 <div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="antes-de-empezar.html#cb114-1" tabindex="-1"></a>sexo_edad_estudiantes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(sexo, edad)</span></code></pre></div>
-<p>En el panel superior derecho han aparecido los objetos que acaban de crearse. De este último se indica allí la cantidad de casos (observaciones) y de varables. Cuando se lo cliquea, se obtiene una vista en una ventana separada del script.<br />
+<p>En el panel superior derecho han aparecido los objetos que acaban de crearse. De este último se indica allí la cantidad de casos (observaciones) y de variables. Cuando se hace clic en él, se obtiene una vista en una ventana separada del script.<br />
 La misma vista puede lograrse con el comando:</p>
 <div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="antes-de-empezar.html#cb115-1" tabindex="-1"></a><span class="fu">View</span>(sexo_edad_estudiantes)</span></code></pre></div>
 <p>Para ver la primera parte de la matriz de datos, se usa el comando <code>head</code>:</p>
@@ -892,14 +892,14 @@ Los números entre corchetes (el [1] y [9] en este ejemplo) indican el número d
 </div>
 <div id="lectura-de-una-matriz-de-datos" class="section level4 unnumbered hasAnchor">
 <h4>Lectura de una matriz de datos<a href="antes-de-empezar.html#lectura-de-una-matriz-de-datos" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Es poco frecuente la creación de matrices de datos en R, salvo a fines de ejemplificación. Por el contrario, a menudo es necesario leer un base que está guardada con un determinado formato (xls, ods, sav, sas, txt, csv, etc). El comando genérico es <code>read.table</code>, que requiere especificación sobre los simbolos que separan los campos y los decimales, si la primera fila lleva el nombre de las variables. Otros comandos más específicos son <code>read.csv</code>, <code>read.csv2</code>, el primero usa como separador por defecto “,”, el segundo usa “;” y no necesitan que se indique si están los nombres de las variables, porque por defecto los toman. A modo de ejemplo, leemos la base de la Encuesta Permanente de Hogares correspondiente al tercer trimestre de 2018. El archivo tiene frmato de texto (.txt) y se llama “usu_individual_T318.txt”. Vamos a darle el nuevo nombre de eph.3.18:</p>
+<p>Es poco frecuente la creación de matrices de datos en R, salvo a fines de ejemplificación. Por el contrario, a menudo es necesario leer un base que está guardada con un determinado formato (xls, ods, sav, sas, txt, csv, etc). El comando genérico es <code>read.table</code>, que requiere especificación sobre los símbolos que separan los campos y los decimales, si la primera fila lleva el nombre de las variables. Otros comandos más específicos son <code>read.csv</code>, <code>read.csv2</code>, el primero usa como separador por defecto “,”, el segundo usa “;” y no necesitan que se indique si están los nombres de las variables, porque por defecto los toman. A modo de ejemplo, leemos la base de la Encuesta Permanente de Hogares correspondiente al tercer trimestre de 2018. El archivo tiene formato de texto (.txt) y se llama “usu_individual_T318.txt”. Vamos a darle el nuevo nombre de eph.3.18:</p>
 <div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="antes-de-empezar.html#cb134-1" tabindex="-1"></a>eph.<span class="fl">3.18</span> <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">&quot;bases/archivostxt/usu_individual_T318.txt&quot;</span>,</span>
 <span id="cb134-2"><a href="antes-de-empezar.html#cb134-2" tabindex="-1"></a>  <span class="at">sep =</span> <span class="st">&quot;;&quot;</span>, <span class="at">header =</span> <span class="cn">TRUE</span></span>
 <span id="cb134-3"><a href="antes-de-empezar.html#cb134-3" tabindex="-1"></a>)</span></code></pre></div>
 <p>Hemos indicado:<br />
 - la ruta del archivo, dentro de nuestro directorio<br />
 - que los campos están separados con un “;”<br />
-- que la primera fila tiene lso nombres de las variables</p>
+- que la primera fila tiene los nombres de las variables</p>
 <p>En el panel superior derecho aparece el nombre de este nuevo objeto con la cantidad de casos (filas) y de variables (columnas).</p>
 </div>
 <div id="graficar" class="section level4 unnumbered hasAnchor">

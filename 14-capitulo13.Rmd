@@ -674,7 +674,7 @@ En la aplicación de la prueba, los argumentos son la tabla univariada y las pro
 chisq.test(tabla_condicion, p = c(.30, .35, .35))
 ```
 
-La salida muestra el puntaje $\chi^2$, los grados de libertad y el valor p asociado. Por tratarse de un valor elevado, concluimos que no hay evidencia para rechazar la hipótesis según la cual quienes estudian más de una carrera se ditribuyen entre regulares, promocionales y libres del mismo modo que lo hacen quienes solo estudian una carrera.
+La salida muestra el puntaje $\chi^2$, los grados de libertad y el valor p asociado. Por tratarse de un valor elevado, concluimos que no hay evidencia para rechazar la hipótesis según la cual quienes estudian más de una carrera se distribuyen entre regulares, promocionales y libres del mismo modo que lo hacen quienes solo estudian una carrera.
 
 
 ### Prueba de la mediana  
@@ -795,7 +795,7 @@ wilcox.test(despues, antes, alternative = "greater", mu = 0, paired = TRUE)
 
 Leemos que, en una prueba unilateral derecha, el valor $p$ es menor a los niveles usuales de significación, por lo que hay evidencia para afirmar que los puntajes son mayores luego de la intervención.
 
-La realización de esta prueba si la satisfacción esstuviese medida a nivel métrico y se pudiera suponer la normalidad de las distribuciones, sería por medio de una prueba t para muestras apareadas:
+La realización de esta prueba si la satisfacción estuviese medida a nivel métrico y se pudiera suponer la normalidad de las distribuciones, sería por medio de una prueba t para muestras apareadas:
 
 ```{r echo=TRUE}
 t.test(despues, antes, paired = TRUE, alternative = "greater")

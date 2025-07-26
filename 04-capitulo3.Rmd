@@ -63,7 +63,7 @@ Se define habitualmente como **tasa** a la frecuencia relativa de un
 fenómeno en referencia a una población total, con la característica de tener en cuenta un período de tiempo. También es común el uso del
 término cuando se trata de hechos de poca incidencia, es decir que su
 frecuencia es pequeña. En esos casos se la suele expresar cada 1.000,
-cada 10.000, o inclusive cada 100.000 casos, en lugar de porciento. Por ejemplo, la tasa de desocupación en Argentina se define como la proporción de personas desocupadas, respecto del total de personas activas. Estas últimas son quienes tienen una ocupación o que sin tenerla la están buscando activamente. Está compuesta por la población ocupada más la población desocupada [@INDEC2011a]. Según INDEC, la tasa de desocupación en el segundo semestre de 2019 fue de 10.6% (https://www.indec.gob.ar/uploads/informesdeprensa/mercado_trabajo_eph_2trim19ED75D3E4D2.pdf). Según la Organización Mundial de la Salud, en el año 2017, el cinco por mil de la población mundial vivía con VIH (https://www.who.int/features/factfiles/hiv/es/)
+cada 10.000, o inclusive cada 100.000 casos, en lugar de por ciento. Por ejemplo, la tasa de desocupación en Argentina se define como la proporción de personas desocupadas, respecto del total de personas activas. Estas últimas son quienes tienen una ocupación o que sin tenerla la están buscando activamente. Está compuesta por la población ocupada más la población desocupada [@INDEC2011a]. Según INDEC, la tasa de desocupación en el segundo semestre de 2019 fue de 10.6% (https://www.indec.gob.ar/uploads/informesdeprensa/mercado_trabajo_eph_2trim19ED75D3E4D2.pdf). Según la Organización Mundial de la Salud, en el año 2017, el cinco por mil de la población mundial vivía con VIH (https://www.who.int/features/factfiles/hiv/es/)
 
 Las tasas se usan especialmente para resumir procesos que suceden a lo largo del tiempo y se resumen en un momento dado. Esos procesos se captan mediante registros continuos, como los registros de nacimientos, defunciones, matrimoniales, de ingresos a hospitales, de declaración de residencia en municipios que lo  solicitan. Por ejemplo, la tasa bruta de mortalidad se calcula dividiendo la cantidad de defunciones ocurridas en un período de tiempo (usualmente un año) y en un espacio geográfico (país, provincia, etc), por el total de la población que vivía en ese espacio geográfico a la mitad de ese año. La palabra "bruta" se refiere a que el cálculo de esta tasa no hace distinción por características de la población, como sexo o edad. Por el contrario, si se dividen las defunciones anuales de personas de una edad determinada por la cantidad de personas de esa edad que había a la mitad del año, se obtiene una tasa específica (por oposición a bruta) de mortalidad para esa edad.
 
@@ -359,7 +359,7 @@ es el caso que ocupa ese lugar? Vemos que hasta 3 síntomas se acumulan
 90 pacientes y 160 hasta los 4. Quien ocupa el puesto 125 en
 la serie simple ordenada está entre quienes recibieron su diagnóstico a
 partir de 4 síntomas. Por esa razón indicamos a la mediana con ese
-valor: 4, $M_{dn} = 4$ que es el que cumple con la definción de superar a y ser superado por, no más de la mitad de las observaciones. Así, la primera categoría que tenga una frecuencia acumulada superior al 50% será la que contenga a la mediana. Es así porque, tanto las categorías anteriores a 4 como las posteriores reúnen menos de la mitad de las observaciones. La lectura del resultado es que la mitad de
+valor: 4, $M_{dn} = 4$ que es el que cumple con la definición de superar a y ser superado por, no más de la mitad de las observaciones. Así, la primera categoría que tenga una frecuencia acumulada superior al 50% será la que contenga a la mediana. Es así porque, tanto las categorías anteriores a 4 como las posteriores reúnen menos de la mitad de las observaciones. La lectura del resultado es que la mitad de
 los diagnósticos de esquizofrenia se realizó a partir de la presencia de cuatro síntomas o menos.
 
 Sea la variable *número de materias aprobadas por estudiantes de segundo año de una carrera universitaria*:
@@ -962,8 +962,8 @@ asim_izq <- rexp(n = 1000, rate = .1)
 asim_izq <- max(asim_izq) - asim_izq
 df3 <- data.frame(
   sim = rnorm(1000), # simetrica
-  asim_der = rexp(n = 1000, rate = .1), # asimetrica a derecha
-  asim_izq = asim_izq # asimetrica a izquierda
+  asim_der = rexp(n = 1000, rate = .1), # asimétrica a derecha
+  asim_izq = asim_izq # asimétrica a izquierda
 )
 ggplot(df3) + geom_histogram(aes(sim), fill = "green", bins = 30) +
   xlab("x1") + ylab("f") + theme_tufte() + ggtitle("Distribución simétrica") + theme(
@@ -1012,7 +1012,7 @@ En estas distribuciones las medias y medianas son:
 | Una distribución es **simétrica** si la media coincide con la mediana. La distribución se llama **asimétrica a la derecha** si la media es mayor que la mediana, y **asimétrica a la izquierda** si la media es menor que la mediana. |
 
 
-Las siguientes ojivas de Galton corresponden a las tres distribuciones anteriores. De estos gráficos interesa la zona en que crecen más rápido, porque allí es donde está la mayor concentración de casos. Cuando la distribución es simétrica, la parte de crecimiento rápido (donde la curva tiene a ser más vertical) está al centro, si es asimétrica a la derecha, crece rápido al principio, mientras que cuando es asimetrica a la izquierda, la parte de crecimiento rápido corresponde a los valores más altos de la variable.
+Las siguientes ojivas de Galton corresponden a las tres distribuciones anteriores. De estos gráficos interesa la zona en que crecen más rápido, porque allí es donde está la mayor concentración de casos. Cuando la distribución es simétrica, la parte de crecimiento rápido (donde la curva tiene a ser más vertical) está al centro, si es asimétrica a la derecha, crece rápido al principio, mientras que cuando es asimétrica a la izquierda, la parte de crecimiento rápido corresponde a los valores más altos de la variable.
 ```{r fig.cap= "Ojivas de Galton correspondientes a variables con diferente asimetría", fig.asp = 0.7, fig.width = 3, fig.align = 'center'}
 ggplot(df3) + stat_ecdf(aes(sim)) +
   xlab("x1") + ylab("F'") + theme_tufte() + ggtitle("Distribución simétrica") + theme(
@@ -1147,7 +1147,7 @@ ggplot(univ) +
 
 Se observa que, aunque en todos los grupos existen casos de estudiantes con edades altas, quienes no tienen actividad laboral (inactives) se concentran en las edades más bajas.
 
-Además de la caja, se ven dos segmentos que se extienden por encima y por debajo de ella. La longitud de estos segmentos (llamados a veces "bigotes") depende de una caracteírística de la distribución que se trata en el apartado siguiente: la dispersión.  
+Además de la caja, se ven dos segmentos que se extienden por encima y por debajo de ella. La longitud de estos segmentos (llamados a veces "bigotes") depende de una característica de la distribución que se trata en el apartado siguiente: la dispersión.  
 
 El box plot puede aparecer presentado de manera vertical u horizontal. Los siguientes corresponden a distribuciones de diferente asimetría.  
 
@@ -1296,7 +1296,7 @@ estén por debajo de ella. Acabamos de ver también que su suma vale cero,
 es decir que $\sum_{i = 1}^{n}{\left( x_{i} - \overline{x} \right) = 0}$
 y que esta es una cualidad de la media, que no depende de los datos[^indep_media].
 
-La representación gráfica de esta propiedad puede verse pensando en una analogía física; como si cada caso graficado en el histograma fuese un bloque de cierto peso, situado en el valor de la variable. Con esa idea, la ubicación de la media es el punto donde habria que apoyar el histograma para que éste quede en equilibrio:
+La representación gráfica de esta propiedad puede verse pensando en una analogía física; como si cada caso graficado en el histograma fuese un bloque de cierto peso, situado en el valor de la variable. Con esa idea, la ubicación de la media es el punto donde habría que apoyar el histograma para que éste quede en equilibrio:
 
 ```{r fig.cap="Esquema de la ubicación de la media en el punto de equilibrio del histograma", fig.asp = 0.7, fig.width = 3, fig.align = 'center'}
 ggplot(univ) + geom_histogram(aes(CH06), bins = 30, fill = "green") +
@@ -1869,7 +1869,7 @@ aux_table <- tibble::tribble(
   ~"", ~"", ~"Nivel de medición mínimo requerido",
   "Entre extremos", "Recorrido", "Intervalar",
   "Basada en el orden", "Amplitud intercuartílica", "Intervalar",
-  "Basadas enla media", "Varianza", "Intervalar",
+  "Basadas enl a media", "Varianza", "Intervalar",
   "", "Desviación estándar", "Intervalar",
   "", "Coeficiente de variación", "Intervalar",
   "De incertidumbre", "Coeficiente de incertidumbre", "Nominal"
@@ -1967,7 +1967,7 @@ edad_4_teo <- cut(eph.3.18$CH06, breaks = c(
 freq(edad_4_teo, report.nas = FALSE)
 ```
 
-La solicitud de algunas medidas de dispersión es directa en R, otras deben calcularse.  El Recorrido (R), la Amplitud Intercuartílica (AIQ), el Semirrecorrido Intercuartílico (SRIC) así como el Coeficiente de Variación (CV) deben computarse según su definición. Para los ingresos, de la base "asalarides":
+La solicitud de algunas medidas de dispersión es directa en R, otras deben calcularse.  El Recorrido (R), la Amplitud Intercuartílica (AIQ), el Semirrecorrido Intercuartílico (SRIC) así como el Coeficiente de Variación (CV) deben computarse según su definición. Para los ingresos, de la base "asalariades":
 
 ```{r warning=FALSE, echo=TRUE}
 

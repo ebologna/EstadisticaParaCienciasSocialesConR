@@ -592,7 +592,7 @@ puntuaciones obtenidas antes y después del tratamiento, o por un grupo y
 el otro; o lo que es lo mismo, que las diferencias son cero (nulas). En
 la hipótesis alternativa se planteará la situación opuesta, sea
 bilateral (que las medias difieren) o unilateral (que una media es mayor que la otra).</p>
-<p>Estos procedimientos no sólo se utilizan en experimentos -que contruyen los grupos con criterios preestablecidos-, sino también en estudios que analizan datos de observación, que pueden provenir de encuestas o de observación directa. Así una variable independiente puede constituirse por
+<p>Estos procedimientos no sólo se utilizan en experimentos -que construyen los grupos con criterios preestablecidos-, sino también en estudios que analizan datos de observación, que pueden provenir de encuestas o de observación directa. Así una variable independiente puede constituirse por
 grupos o muestras de sujetos que conforman categorías diferentes.
 Varones versus mujeres, población rural versus población urbana, estudiantes de escuela primaria
 que repiten o no repiten un grado. Pueden interesar entonces, ciertas
@@ -704,7 +704,7 @@ que las varianzas poblacionales no son iguales.</p>
 <p>Y tiene una distribución F con <span class="math inline">\(n_{1} - 1\)</span> grados de libertad en el
 numerador y <span class="math inline">\(n_{2} - 1\)</span> grados de libertad en el denominador.</p>
 <p>Ejemplo 1. (datos ficticios): nos preguntamos si, para una carrera
-universitaria dada, el tiempo que tardan en completar sus estudios quienes trabajan es el mismo que el que les requiere a quines no lo hacen, o si difiere.
+universitaria dada, el tiempo que tardan en completar sus estudios quienes trabajan es el mismo que el que les requiere a quienes no lo hacen, o si difiere.
 Para ello tomamos una muestra de 100 estudiantes que trabajan y obtenemos una media de duración de la carrera de 6.7 años y una desviación estándar de 1.2 años. Extraemos otra muestra, de 150 casos que no trabajan, en la que obtenemos un promedio de los años de duración de 6.3 con una desviación estándar de 1.5 años. Todos estos datos provienen de la información descriptiva que proveen las muestras, son los que vamos a usar para hacer la inferencia acerca de las
 poblaciones, constituidas por el total de quienes trabajan y no
 trabajan.</p>
@@ -816,9 +816,9 @@ docentes mujeres y varones respectivamente. Al final del capítulo se verá como
 ## mean in group mujeres mean in group varones 
 ##              40.07696              41.22033</code></pre>
 <p>El título es el de prueba t de dos muestras de Welch, que se refiere a la corrección de Welch-Satterthwaite. Se indican los datos, que es edad según sexo (la comparación de las edades según sexo).<br />
-Lugo se ofrece el valor <span class="math inline">\(t_{obs}\)</span>, de -1.99, los grados de libertad y el valor <span class="math inline">\(p\)</span>, de 0.048. Se indica cuál fue la hipotesis alternativa (que las medias difieres, es decir bilateral).<br />
+Lugo se ofrece el valor <span class="math inline">\(t_{obs}\)</span>, de -1.99, los grados de libertad y el valor <span class="math inline">\(p\)</span>, de 0.048. Se indica cuál fue la hipótesis alternativa (que las medias difieres, es decir bilateral).<br />
 Luego se lee un intervalo de confianza para estimar la diferencia de las media, construido, por defecto al 95% y, finalmente las medias muestrales.</p>
-<p>La lectura de esta salida es que, a un nivel de significación del 5%, hay evidencia para rechazar la hipótesis de igualdad de las medias poblacionales, dado que el valor <span class="math inline">\(p\)</span> hallado es menor a ese criterio. Pero si se reduce el riesgo de cometer error de tipo I y se baja el nivel de sigificación al 1%, entonces el resultado ya no es significativo a este nivel. La lectura del resultado debe incluir esta interpretación, para que quede constancia que la <span class="math inline">\(H_{0}\)</span> ha sido rechazada con poca evidencia en su contra.<br />
+<p>La lectura de esta salida es que, a un nivel de significación del 5%, hay evidencia para rechazar la hipótesis de igualdad de las medias poblacionales, dado que el valor <span class="math inline">\(p\)</span> hallado es menor a ese criterio. Pero si se reduce el riesgo de cometer error de tipo I y se baja el nivel de significación al 1%, entonces el resultado ya no es significativo a este nivel. La lectura del resultado debe incluir esta interpretación, para que quede constancia que la <span class="math inline">\(H_{0}\)</span> ha sido rechazada con poca evidencia en su contra.<br />
 Un dato adicional que obtenemos en la salida es el intervalo de confianza que estima la diferencia poblacional. Leemos que, con una confianza del 95%, el intervalo que va de 0.007 a 2.280, contiene a la diferencia de edades que hay en la población. Para la lectura del intervalo no se tiene en cuenta el signo negativo, que proviene de haber restado <span class="math inline">\(edad.mujeres - edad.varones\)</span> y que habría sido positivo de haber elegido restar en otro orden. Sí importa, por el contrario, que los signos de los límites sean iguales (ambos positivos o ambos negativos) porque eso quiere decir que, al nivel de confianza establecido, se excluye al cero del intervalo. Por eso este resultado es siempre compatible con la decisión de aceptar o rechazar <span class="math inline">\(H_{0}\)</span>, al mismo nivel de significación.</p>
 <p>Cuando una prueba de hipótesis sobre diferencia de medias se rechaza a un nivel de significación <span class="math inline">\(\alpha\)</span>, entones, un intervalo construido con una confianza del <span class="math inline">\(1-\alpha\)</span>, excluye al cero entre sus límites. Dicho de otra manera, el límite inferior y el límite superior tienen el mismo signo.</p>
 <p>Cuando una prueba de hipótesis sobre diferencia de medias no se rechaza a un nivel de significación <span class="math inline">\(\alpha\)</span>, entones, un intervalo construido con una confianza del <span class="math inline">\(1-\alpha\)</span>, incluye al cero entre sus límites. Dicho de otra manera, el límite inferior es negativo y el límite superior es positivo.</p>
@@ -1577,7 +1577,7 @@ La conclusión de la prueba sí es la misma.</p>
 </div>
 <div id="prueba-apareada" class="section level3 hasAnchor" number="12.2.4">
 <h3><span class="header-section-number">12.2.4</span> Prueba apareada<a href="prueba-de-hipótesis-las-aplicaciones.html#prueba-apareada" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Se contruye la matriz de datos ficticios:</p>
+<p>Se construye la matriz de datos ficticios:</p>
 <div class="sourceCode" id="cb620"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb620-1"><a href="prueba-de-hipótesis-las-aplicaciones.html#cb620-1" tabindex="-1"></a>antes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">7</span>)</span>
 <span id="cb620-2"><a href="prueba-de-hipótesis-las-aplicaciones.html#cb620-2" tabindex="-1"></a>despues <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>)</span>
 <span id="cb620-3"><a href="prueba-de-hipótesis-las-aplicaciones.html#cb620-3" tabindex="-1"></a>para_prueba_apareada <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(antes, despues)</span></code></pre></div>
@@ -1597,7 +1597,7 @@ La conclusión de la prueba sí es la misma.</p>
 </div>
 <div id="coeficiente-de-correlación" class="section level3 hasAnchor" number="12.2.5">
 <h3><span class="header-section-number">12.2.5</span> Coeficiente de correlación<a href="#coeficiente-de-correlaci%C3%B3n" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Sea que se cuenta con datos de 27 estudiantes sobre el tiempo dedicado a preparar un parcial (<code>tiempo_prep</code>) y la calificación obtenida (<code>calif</code>). Para solicitar la prueba de significación sobre el coeficiente r de Pearson, simplememente se solicita:</p>
+<p>Sea que se cuenta con datos de 27 estudiantes sobre el tiempo dedicado a preparar un parcial (<code>tiempo_prep</code>) y la calificación obtenida (<code>calif</code>). Para solicitar la prueba de significación sobre el coeficiente r de Pearson, simplemente se solicita:</p>
 <div class="sourceCode" id="cb623"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb623-1"><a href="prueba-de-hipótesis-las-aplicaciones.html#cb623-1" tabindex="-1"></a><span class="fu">cor.test</span>(tiempo_prep, calif)</span></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s product-moment correlation
