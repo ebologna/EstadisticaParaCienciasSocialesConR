@@ -11,7 +11,7 @@ site: bookdown::bookdown_site
 bibliography: bibliografia.bib
 biblio-style: apalike
 cover-image: imagenes/cover.jpg
-github-repo: jcrodriguez1989/EstadisticaParaCienciasSocialesConR
+github-repo: ebologna/EstadisticaParaCienciasSocialesConR
 always_allow_html: yes
 ---
 

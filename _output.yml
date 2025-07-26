@@ -2,7 +2,7 @@ bookdown::gitbook:
   dev: svglite
   css: style.css
   config:
-    edit: https://github.com/jcrodriguez1989/EstadisticaParaCienciasSocialesConR/edit/master/%s
+    edit: https://github.com/ebologna/EstadisticaParaCienciasSocialesConR/edit/master/%s
     toc:
       before: |
         <li><a href="./">Estadística para Ciencias Sociales con R</a></li>
